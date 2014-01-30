@@ -781,31 +781,11 @@ header p {
 #banner ul li a.button {
   background-color: #FFE788;
 }
-#banner #logo1 {
+#banner #logo {
   position: absolute;
   height: 36px;
   width: 36px;
   right: 7px;
-  top: 7px;
-  display: block;
-  background: url(../images/octocat-logo.png);
-}
-
-#banner #logo2 {
-  position: absolute;
-  height: 36px;
-  width: 36px;
-  right: 50px;
-  top: 7px;
-  display: block;
-  background: url(../images/octocat-logo.png);
-}
-
-#banner #logo3 {
-  position: absolute;
-  height: 36px;
-  width: 36px;
-  right: 93px;
   top: 7px;
   display: block;
   background: url(../images/octocat-logo.png);
