@@ -769,7 +769,7 @@ header p {
   -webkit-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
   -o-box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
   box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.4), 0px 1px 1px rgba(0, 0, 0, 0.1);
-  background-color: #dcff88;
+  background-color: #d5ff6f;
   line-height: 14px;
   font-size: 14px;
   color: #333;
@@ -778,7 +778,7 @@ header p {
   padding:6px;
 }
 .ga:hover {
-  background-color: #c6ff3c;
+  background-color: #e4ffa2;
 }
 #banner .downloads {
   float: right;
