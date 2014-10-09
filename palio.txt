@@ -1,0 +1,291 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Andreas Source - My Projects</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/main.js"></script>
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
+    <link href="lightbox.css" rel="stylesheet" />
+
+</head>
+<body>
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter24231430 = new Ya.Metrika({id:24231430,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true});
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="//mc.yandex.ru/watch/24231430" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+
+<header>
+    <h1>Andreas Source</h1>
+    <p>Web Applications development, Webpages design (HTML5-CSS-JavaScript-XML-XSLT-PHP-MySQL-CommandLine)</p>
+</header>
+
+<div id="banner">
+    <span id="logo"></span>
+    <!--<a href="https://github.com/libandreas" class="button fork"><strong>View On GitHub</strong></a>-->
+    <a href="devmail.html" class="button fork"><strong>Σελίδα Επικοινωνίας</strong></a>
+</div><!-- end banner -->
+
+<div class="wrapper">
+<nav>
+    <ul></ul>
+</nav>
+<section>
+
+<!-- ANDREAS MODIFY START-->
+<p>Eδώ θα βρείτε δείγματα από τις ιστοσελίδες, καθώς και τα προγράμματα ιστοσελίδων που εχω φτιάξει.</p>
+
+<h1>Small Projects</h1>
+<table align="center" border="0" cellpadding="1" cellspacing="1" style="width:600px">
+    <tbody>
+    <tr>
+        <td style="text-align: center; vertical-align: top; width: 300px;">
+
+            <h2><a target="_blank" href="http://anastasopoulou.eu/">Anastasopoulou.eu</a></h2>
+            <img alt="" src="http://i.imgur.com/7r1CSQf.jpg" style="width:188px" />
+            <p>Πρόκειται για ένα απλό με 5-6 σελίδες και μια σελίδα επικοινωνίας με χάρτη, πλήρως δυναμικό, το site πλέων έχει κλείσει καθώς έτσι που ζητήθηκε μετά από 2 περίπου χρόνια λειτουργείας, μπορείτε να δείτε το gallery</p>
+            <a href="http://imgur.com/a/OdF3t" target="_blank" class="ga"><strong>View Gallery</strong></a>
+        </td>
+        <td style="text-align: center; vertical-align: top; width: 300px;">
+            <h2><a target="_blank" href="http://laxamentumRes.eu/">LaxamentumRes.eu</a></h2>
+            <img alt="" src="http://i.imgur.com/Lf6KEyW.jpg" style="width:180px" />
+            <p>Πρόκειται για site με πολύπλοκο template, αρκετά πολύπλοκο καθώς δεν είχε καμία σύστημά περιεχομένου και όλο το κείμενο στην html ήταν συνδεόμενο με js και css παντού, διαθέτη και έναν αυτόνομο σύστημά επικοινωνίας.</p>
+            <a href="http://imgur.com/a/u9kHk" target="_blank" class="ga"><strong>View Gallery</strong></a>
+            <a href="http://laxamentumRes.eu/" target="_blank" class="sa"><strong>View Site</strong></a>
+        </td>
+    </tr>
+    <tr>
+        <td style="text-align: center; vertical-align: top; width: 300px;">
+
+            <h2><a target="_blank" href="http://Hapenet.eu/">Hapenet.eu</a></h2>
+            <img alt="" data-lightbox="image-3" src="http://i.imgur.com/pAPtAO2.png" style="width:180px" />
+            <p>Πρόκειται για ένα απλό με 5-6 σελίδες περιγράφει ένα δίκτυο προώθησης υπηρεσιών και είναι πλήρως δυναμικό.</p>
+            <a href="http://Hapenet.eu/" target="_blank" class="sa"><strong>View Site</strong></a>
+        </td>
+        <td style="text-align: center; vertical-align: top; width: 300px;">
+            <h2>gsis Api Client, (Γ.Γ.Π.Σ)</h2>
+            <img alt="" src="http://i.imgur.com/HpuKgaw.png" style="width:180px" />
+            <p>Πρόκειται για ενα πρόγραμμα client που επικοινωνεί με το δίκτιο τις γενικής γραμματείας πληροφοριακών συστημάτων (API), με αυτό το πρόγραμμα μπορεί κάποιος να δεί όλες τις διαθέσιμες πληροφορίες που υπάρχουν για οποιαδήποτε επιχειρηματική δραστηριότητα σε οποιαδήποτε ΑΦΜ που θα ορίζετε εσείς.</p>
+            <p><p>&Delta;&epsilon;ί&tau;&epsilon; <a href="http://www.gsis.gr/gsis/info/gsis_site/PublicIssue/wnsp/wnsp_pages/wnsp.html" target="_blank">&epsilon;&delta;ώ</a>.</p></p>
+            <a href="http://imgur.com/a/GWlVu" target="_blank" class="ga"><strong>View Gallery</strong></a>
+        </td>
+    <tr>
+        <td style="text-align: center; vertical-align: top; width: 300px;">
+            <h2><a target="_blank" href="http://andreas-constantinides.eu/">A. Constantinides.eu</a></h2>
+            <img alt="" src="http://i.imgur.com/vLZNlEr.png" style="width:180px" />
+            <p>Πρόκειται για να ένα προεκλογικό προφίλ, είναι σε μία βασισμένο στο στατική εμφάνιση του w3layouts, το όλο site είναι δυναμικό βασισμένο σε custom κώδικα που είχα στο αρχείο μου.
+                έχει της εξείς δυνατότητες.
+                Η διαχείριση του site γίνετε μέσα από ένα πάρα πολύ απλό πάνελ ειδικά φτιαγμένο για αυτούς που δεν ξέρουν και πολλά από CMS.
+                Έχει αυτές τις δυνατότητες:
+            <ul>
+                <li>Επεξεργασία σελίδων</li>
+                <li>Εγγραφή σε newsletter</li>
+                <li>Φόρμά επικοινωνίας</li>
+                <li>Προσθήκη ενημερώσεων</li>
+                <li>Προσθήκη και έγκριση σχολίων από επισκέπτες</li>
+                <li>Δημοσκόπηση</li>
+            </ul>
+            Εκτός από τη δημοσκόπηση όλα είναι φτιαγμένα (και το πάνελ) με custom php κώδικά που φτιάχτηκε για τον πελάτη, φυσικά χρησιμοποιήθηκαν υπάρχων προγράμματα που είδη υπήρχαν στο αρχείο μου.</p>
+            <p><strong>(!) Προσοχή το site δεν ανεφέρετε σε εμένα, και απλός έτυχε να έχει το ίδιο το ίδιο όνομα εκείνος που το ζήτησε</strong></p>
+            <a href="http://imgur.com/a/MtNqo" target="_blank" class="ga"><strong>View Gallery</strong></a>
+            <a href="http://andreas-constantinides.eu/" target="_blank" class="sa"><strong>View Site</strong></a>
+
+        </td>
+        
+    </tr>
+    </tbody>
+</table>
+<h1>Heavy Projects</h1>
+<hr>
+<h2><a target="_blank" href="http://whispers.org.gr/">7 Whispers.org.gr</a></h2>
+<div style="text-align: center; border:1px">
+</div>
+<a data-lightbox="image-1" target="_blank" href="http://i.imgur.com/J7wqr3M.png"><img alt="" src="http://i.imgur.com/J7wqr3M.png" style="float:left; width:280px" /></a>
+<a data-lightbox="image-1" target="_blank" href="http://i.imgur.com/KzIE4bG.png"><img alt="" src="http://i.imgur.com/KzIE4bG.png" style="float:left; width:280px; margin-left:3px" /></a>
+<p><br><br><br><br><br><br><br><br>Πρόκειται για μία ιστοσελίδα κοινωνικής δικτύωσης social όπως το facebook, αλλά όλα τα ποστ γίνονται σε μορφή online βιβλίου</strong>.
+</p><ul>
+    <li><strong>CMS, Σύστημα Δυναμικού Περιεχομένου: </strong>Custom PHP</li>
+    <li><strong>Template, Πρότυπο: </strong>Magicbook 3d responsive flip Book</li>
+    <li><strong>DataBase, Βάση Δεδομένων: </strong>Σύστημα αρχείων</li>
+    <li><strong>Γλώσσα Προγραματισμού: </strong>PHP, Javascript</li>
+</ul>
+<p>
+    <a href="http://whispers.org.gr/" target="_blank" class="sa"><strong>View Site</strong></a>
+</p>
+
+<h2><a target="_blank" href="http://doctorandadvice.gr/">6 DοctorAndAdvice.gr</a></h2>
+<div style="text-align: center; border:1px">
+</div>
+<a target="_blank" href="http://i.imgur.com/yKMeXTe.png"><img alt="" src="http://i.imgur.com/yKMeXTe.png" style="float:left; width:280px" /></a>
+<a target="_blank" href="http://i.imgur.com/ftPLzRg.png"><img alt="" src="http://i.imgur.com/ftPLzRg.png" style="float:left; width:280px; margin-left:3px" /></a>
+<p><br><br><br><br><br><br><br><br>Πρόκειται για online σύστημα αναζήτησης ιατρών με επιστημονικό και συγκεκριμένο τρόπο, περιλαμβάνει σελίδα επικοινωνία με γιατρούς, σελίδα γιατρού με χάρτη φωτογραφίες, λεπτομέριες κ.τ.λ, και μέσα απο εκεί μπορούν να κλείσουν online ραντεβού, είναι <strong>ΥΠΟ ΚΑΤΑΣΚΕΥΗ</strong>.
+</p><ul>
+    <li><strong>CMS, Σύστημα Δυναμικού Περιεχομένου: </strong>Custom PHP</li>
+    <li><strong>Template, Πρότυπο: </strong>Voyage, responsive</li>
+    <li><strong>DataBase, Βάση Δεδομένων: </strong>MySQL/MariaDB</li>
+    <li><strong>Γλώσσα Προγραματισμού: </strong>PHP, Javascript</li>
+</ul>
+<p>
+    <a href="http://doctorandadvice.gr/" target="_blank" class="sa"><strong>View Site</strong></a>
+</p>
+
+<hr>
+
+<h2><a target="_blank" href="http://nutritionfriends.gr/">5 NutritionFriends.gr</a></h2>
+<p style="text-align: center;">
+    <a target="_blank" href="http://i.imgur.com/FCmYeZL.png"><img alt="" src="http://i.imgur.com/FCmYeZL.png" style="float:left; width:280px" /></a>
+    <a target="_blank" href="http://i.imgur.com/0JLkUil.png"><img alt="" src="http://i.imgur.com/0JLkUil.png" style="float:left; width:280px; margin-left:3px" /></a>
+</p>
+<p><br><br><br><br><br><br><br>Πρόκειται για online καταστημα με ειδικής κατασκευής template, και με τρόπους πληρωμής, πρόκειται για κανονικό e-shop, για εναν ανεξάρτητο συνεργάτη τις Herbalife.</p><ul>
+    <li><strong>CMS, Σύστημα Δυναμικού Περιεχομένου: </strong>QuickCart</li>
+    <li><strong>Template, Πρότυπο: </strong>QuickCart (Modifed)</li>
+    <li><strong>DataBase, Βάση Δεδομένων: </strong>Σύστημα αρχείων</li>
+    <li><strong>Γλώσσα Προγραματισμού: </strong>PHP, Javascript</li>
+</ul>
+<p>
+    <a href="http://e-herbalife.gr/" target="_blank" class="sa"><strong>View Site</strong></a>
+</p>
+
+<h2><a target="_blank" href="http://myfruits.gr/">4 MyFruits.gr</a></h2>
+<p style="text-align: center;">
+    <a target="_blank" href="http://i.imgur.com/aTYRt8J.png"><img alt="" src="http://i.imgur.com/aTYRt8J.png" style="float:left; width:280px" /></a>
+    <a target="_blank" href="http://i.imgur.com/brIOa1r.png"><img alt="" src="http://i.imgur.com/brIOa1r.png" style="float:left; width:280px; margin-left:3px" /></a>
+</p>
+<p><br><br><br><br><br><br><br>Πρόκειται για online κατάστημα με ειδικής κατασκευής template, και με τρόπους πληρωμής, πρόκειται για κανονικό e-shop.</p><ul>
+    <li><strong>CMS, Σύστημα Δυναμικού Περιεχομένου: </strong>PrestaShop</li>
+    <li><strong>Template, Πρότυπο: </strong>Prestashop</li>
+    <li><strong>DataBase, Βάση Δεδομένων: </strong>MySQL/MariaDB</li>
+    <li><strong>Γλώσσα Προγραματισμού: </strong>PHP, Javascript, RainTpl</li>
+</ul>
+<p>
+    <a href="http://myfruits.gr/" target="_blank" class="sa"><strong>View Site</strong></a>
+</p>
+
+<h2><a target="_blank" href="http://myflowers.gr/">3 MyFlowers.gr</a></h2>
+<div style="text-align: center; border:1px">
+</div>
+<a target="_blank" href="http://i.imgur.com/UZKQk6O.png"><img alt="" src="http://i.imgur.com/UZKQk6O.png" style="float:left; width:280px" /></a>
+<a target="_blank" href="http://i.imgur.com/brIOa1r.png"><img alt="" src="http://i.imgur.com/brIOa1r.png" style="float:left; width:280px; margin-left:3px" /></a>
+<p><br><br><br><br><br><br><br><br>Πρόκειται για online κατάστημα με ειδικής κατασκευής template, και με τρόπους πληρωμής, πρόκειται για κανονικό e-shop.
+</p><ul>
+    <li><strong>CMS, Σύστημα Δυναμικού Περιεχομένου: </strong>PrestaShop</li>
+    <li><strong>Template, Πρότυπο: </strong>PrestaShop</li>
+    <li><strong>DataBase, Βάση Δεδομένων: </strong>MySQL/MariaDB</li>
+    <li><strong>Γλώσσα Προγραματισμού: </strong>PHP, Javascript, RainTpl</li>
+</ul>
+<p>Στην συνέχια φτιάχτηκε εφαρμογή για <strong>Android</strong> και <strong>iPhone</strong></p>
+<p><a href="http://imgur.com/a/0Aztr" target="_blank" class="ga"><strong>View Gallery</strong></a>
+    <a href="http://www.myflowers.gr/myflowers/" target="_blank" class="sa"><strong>View Site</strong></a>
+    <a href="https://play.google.com/store/apps/details?id=com.wMyFlowers&hl=el" target="_blank" class="sa"><strong>View on Google Play</strong></a>
+</p>
+
+<hr>
+<h2><a target="_blank" href="http://hbf.gr/news.php">2 HBF.gr</a></h2>
+<p style="text-align: center;">
+    <a target="_blank" href="http://i.imgur.com/lwQgWtX.png"><img alt="" src="http://i.imgur.com/lwQgWtX.png" style="float:left; width:280px" /></a>
+    <a target="_blank" href="http://i.imgur.com/1htOEm7.png"><img alt="" src="http://i.imgur.com/1htOEm7.png" style="float:left; width:280px; margin-left:3px" /></a>
+</p>
+<p><br><br><br><br><br><br><br>Πρόκειται για την ιστοσελίδα της ελληνικής ομοσπονδίας bowling, αυτό που κατασκευάστηκε είναι ένα πάνελ διαχείρισης των ενημερώσεων(επεξεργασία, διαγραφή και προσθήκη) με custom php κώδικα και ένα σύστημα που προβάλει της ενημερώσεις στο site, στην σελίδα news.php
+    Ακόμη προστέθηκε το παλιό πρόγραμμα της ομοσπονδίας στην ιστοσελίδα με php-include ενώ σήμερα είναι με iframe, σε συνεργασία με τη belltron.</p><ul>
+    <li><strong>CMS, Σύστημα Δυναμικού Περιεχομένου: </strong>Custom PHP</li>
+    <li><strong>Template, Πρότυπο: </strong>Responsive</li>
+    <li><strong>DataBase, Βάση Δεδομένων: </strong>Σύστημα αρχείων</li>
+    <li><strong>Γλώσσα Προγραματισμού: </strong>PHP, Javascript</li>
+</ul>
+<p>
+    <a href="http://imgur.com/a/ystrh" target="_blank" class="ga"><strong>View Gallery</strong></a>
+    <a href="http://hbf.gr/news.php" target="_blank" class="sa"><strong>View Site</strong></a>
+</p>
+<hr>
+
+<h2><a target="_blank" href="http://sharkBet.gr">1 SharkBet.gr</a></h2>
+<p style="text-align: center;">
+
+    <a target="_blank" href="http://i.imgur.com/vkNX3rT.png"><img alt="" src="http://i.imgur.com/vkNX3rT.png" style="float:left; width:280px" /></a>
+    <a target="_blank" href="http://i.imgur.com/tWYHCTG.png"><img alt="" src="http://i.imgur.com/tWYHCTG.png" style="float:left; width:280px; margin-left:3px" /></a>
+
+</p><br><br><br><br><br><br>
+<p></p>Πρόκειται για ένα από τα ποιο επαγγελματικά site που έχουν φτιαχτεί ποτέ για το ελληνόφωνους επισκέπτες, είναι φτιαγμένο χωρίς CMS, και είναι παρόλα αυτά πλήρως δυναμικό.
+Αναλαμβάνει πολύπλοκες ειδικές λειτουργίες που τα joomla, wordpress, drupal, getsimple, δεν κάνουν και ούτε είναι η δουλειά τους να κάνουν, για αυτό την δουλεία του δυναμικού την αναλαμβάνουν custom php κώδικας, οποίος βρίσκετε μέσα στην html σελίδες αλλά και σε ξεχωριστά αρχεία, δεν διαθέτει βάση δεδομένων τύπου .db γιατί οι πληροφορίες αποθηκεύονται απευθείας στο σύστημα αρχείων, μεταφέρετε από server σε server πολύ εύκολα με μία απλή αντιγραφή αρχείων, είναι τελείως αυτόνομο λειτουργεί σε όλους τους server.
+<br>
+Πρόκειται για ένα στοιχηματικό - αθλητικό site, φτιαγμένο πλήρως από το μηδέν, περιλαμβάνει και τα προφίλ, περιλαμβάνει custom (όχι έτοιμα) σύστημα πληρωμών, σύστημα έγγραφης και διαχείρισής χρηστών, σύστημα διαχείρισής παραγγελιών και συνδρομών και ξεκλείδωμα σελίδων, και ειδικό πρόγραμμα tv, πολύπλοκα μενού με εικόνες με css και JQuery (JavaScript), καθώς και ειδήσεις με ημερολόγιο αναζήτησης, στο μέλλον θα αποκτήσει online radio ή tv.</p>
+<ul>
+    <li><strong>CMS, Σύστημα Δυναμικού Περιεχομένου: </strong>Προγράμματα που έφτιαξα εγώ</li>
+    <li><strong>Template, Πρότυπο: </strong>Σελίδες που έφτιαξα εγώ</li>
+    <li><strong>DataBase, Βάση Δεδομένων: </strong>HTM/TXT filesystem</li>
+    <li><strong>Γλώσσα Προγραματισμού: </strong>PHP, Javascript</li>
+</ul>
+<p><strong>Δείτε εδώ μερικές σελίδες:</strong></p>
+<ul>
+    <li><a target="_blank" href="http://sharkbet.gr/users/news/">&Alpha;&rho;&chi;&iota;&kappa;ή.</a></li>
+    <li><a target="_blank" href="http://sharkbet.gr/countrytables/tables/?xora=1&amp;lig=1">&Pi;&rho;&omicron;&beta;&omicron;&lambda;ή &Beta;&alpha;&theta;&mu;&omicron;&lambda;&omicron;&gamma;&iota;ώ&nu;.</a></li>
+    <li><a target="_blank" href="http://sharkbet.gr/users/analisis-ellada/gui-records.php?glob=table&amp;zon=2013-2014&amp;lig=1">&Pi;&rho;&omicron;&beta;&omicron;&lambda;ή &Alpha;&nu;&alpha;&lambda;ί&sigma;&epsilon;&omega;&nu;</a>.</li>
+    <li><a target="_blank" href="http://sharkbet.gr/users/programa-ellada/gui-records.php?glob=table&amp;zon=2013-2014&amp;lig=1">&Pi;&rho;&omicron;&beta;&omicron;&lambda;ή &Alpha;&gamma;ώ&nu;&omega;&nu;.</a></li>
+    <li><a target="_blank" href="http://sharkbet.gr/users/user1/forms-info.php">&Delta;&iota;&alpha;&chi;&epsilon;ί&rho;&iota;&sigma;&eta; profile &Chi;&rho;&eta;&sigma;&tau;ώ&nu;.</a></li>
+    <li><a target="_blank" href="http://sharkbet.gr/users/user1/forms-todaytips.php">&Delta;&iota;&alpha;&chi;&epsilon;ί&rho;&iota;&sigma;&eta; Today Tips.</a></li>
+</ul>
+<hr>
+
+<h2>Z Εlinorshop.eu</h2>
+<p style="text-align: center;">
+    <a target="_blank" href="http://i.imgur.com/QXXtMu1.png"><img alt="" src="http://i.imgur.com/Rk51xV2.png" style="float:left; width:280px" /></a>
+    <a target="_blank" href="http://i.imgur.com/zdfobWb.png"><img alt="" src="http://i.imgur.com/zdfobWb.png" style="float:left; width:280px; margin-left:3px" /></a>
+</p>
+<p><br><br><br><br><br><br><br>Πρόκειται για online καταστημα με ειδικής κατασκευής template, και με τρόπους πληρωμής, πρόκειται για κανονικό e-shop, δεν λειτουργεί πλέων ήταν δοκιμαστικό.</p><ul>
+    <li><strong>CMS, Σύστημα Δυναμικού Περιεχομένου: </strong>OpenCart</li>
+    <li><strong>Template, Πρότυπο: </strong>OpenCart</li>
+    <li><strong>DataBase, Βάση Δεδομένων: </strong>Σύστημα αρχείων</li>
+    <li><strong>Γλώσσα Προγραματισμού: </strong>PHP, Javascript</li>
+</ul>
+<hr>
+
+<h2>X Sharkbet.gr Profiles</h2>
+<iframe class="imgur-album" width="100%" height="550" frameborder="0" src="http://imgur.com/a/waXUH/embed"></iframe>
+<style>
+    img
+    {
+        border:2px solid blue;
+        border-radius:6px;
+    }
+</style>
+    <script src="lightbox.js"></script>
+<!-- ANDREAS MODIFY END-->
+
+</section>
+<footer>
+    <p><small>© Andreas 2013, Hosted on GitHub Pages</small></p>
+</footer>
+</div>
+<!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
+</body>
+</html>
