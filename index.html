@@ -14,45 +14,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
     <link href="lightbox.css" rel="stylesheet" />
+    
+<link rel="stylesheet" href="//api.peer5.com/videojs/assets/video-js.min.css">
+<script src="//api.peer5.com/peer5.js?id=rxcbfb5qlhhv53rqblc6"></script>
+<script src="//api.peer5.com/peer5.videojs.js"></script>
 
 </head>
 <body>
-{% highlight ruby %}
-def show
-  @widget = Widget(params[:id])
-  respond_to do |format|
-    format.html # show.html.erb
-    format.json { render json: @widget }
-  end
-end
-{% endhighlight %}
-{{ site.url }}
-<!-- Yandex.Metrika counter -->
-<script type="text/javascript">
-    (function (d, w, c) {
-        (w[c] = w[c] || []).push(function() {
-            try {
-                w.yaCounter24231430 = new Ya.Metrika({id:24231430,
-                    clickmap:true,
-                    trackLinks:true,
-                    accurateTrackBounce:true});
-            } catch(e) { }
-        });
-
-        var n = d.getElementsByTagName("script")[0],
-                s = d.createElement("script"),
-                f = function () { n.parentNode.insertBefore(s, n); };
-        s.type = "text/javascript";
-        s.async = true;
-        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
-
-        if (w.opera == "[object Opera]") {
-            d.addEventListener("DOMContentLoaded", f, false);
-        } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
+    
+    <video id="player" class="video-js vjs-default-skin" height="360" width="640" controls>
+    <source src="" type="application/x-mpegURL" />
+</video>
+<script>
+    var player = videojs('#player');
 </script>
-<noscript><div><img src="//mc.yandex.ru/watch/24231430" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
-<!-- /Yandex.Metrika counter -->
 
 <header>
     <h1>Andreas Source</h1>
