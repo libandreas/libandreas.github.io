@@ -1,5 +1,6 @@
 <META content="text/html; charset=UTF-8" http-equiv="content-type">
 <pre>
+<meta name="robots" content="noindex, nofollow" />
 ==ΤΙΜΕΣ ΚΑΙ ΧΡΟΝΟΙ ΚΑΤΑΣΚΕΥΗΣ==
 
 Portofolio:  http://libandreas.github.com (Andreas-Source)
