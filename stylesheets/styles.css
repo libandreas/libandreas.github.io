@@ -975,9 +975,6 @@ footer {
     -o-text-overflow: ellipsis;
     -ms-text-overflow: ellipsis;
   }
-  header p {
-    display: none;
-  }
 
   #banner {
     top: 80px;
