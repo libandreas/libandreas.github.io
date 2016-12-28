@@ -76,7 +76,6 @@ video {
 
 /*
  * Prevents modern browsers from displaying 'audio' without controls
- */
 audio:not([controls]) {
   display: none;
 }
@@ -905,7 +904,7 @@ footer {
   position: fixed;
   left: 50%;
   margin-left: -530px;
-  bottom: 20px;
+  top: 182px;
   text-align: right;
   line-height: 16px;
 }
