@@ -1,6 +1,6 @@
 /*
 Leap Day for GitHub Pages
-by Matt Graham, modified.
+by Matt Graham, modifyed
 */
 @font-face {
   font-family: 'Quattrocento Sans';
@@ -979,7 +979,7 @@ footer {
 
   #banner {
     /* top: 80px; */
-    position: absolute;
+    position: fixed;
     top: 0;
   }
   #banner .fork {
@@ -1030,6 +1030,9 @@ footer {
     /* display: none; */
     position: absolute;
     top: 0;
+  }
+  .fork {
+    position:absolute !important;
   }
 
   header ul {
