@@ -13,25 +13,42 @@
     <link rel="icon" type="image/x-icon" href="https://assets-cdn.github.com/favicon.ico">
     <link href="lightbox.css" rel="stylesheet" />
 <style>
-nav ul li {
-    line-height: 18px;
-    font-size: 111%;
-}
-h1 {
-    margin-top: 20px;
-}
-h2 {
-    line-height: 1.6;
-}
-hr {
-    margin: 7px 0px;
-}
+    body {
+        animation: fadeInFromNone 0.30s ease-out;
+    }
+    @keyframes fadeInFromNone {
+        0% {
+            display: none;
+            opacity: 0;
+        }
+        1% {
+            display: block;
+            opacity: 0;
+        }
+        100% {
+            display: block;
+            opacity: 1;
+        }
+    }
+    nav ul li {
+        line-height: 18px;
+        font-size: 111%;
+    }
+    h1 {
+        margin-top: 20px;
+    }
+    h2 {
+        line-height: 1.6;
+    }
+    hr {
+        margin: 7px 0;
+    }
     p, ul, ol, table, pre, dl {
-    margin: 8px 0px 14px;
-    font-size: 110%;
+        margin: 8px 0 14px;
+        font-size: 110%;
         color: #313646;
     }
-    img 
+    img
     {
         border: 1px solid #4074b4;
         border-radius: 6px;
@@ -39,14 +56,16 @@ hr {
         display: inline-block;
         box-sizing: border-box;
     }
-    @media print, screen and (max-width: 480px)
-section {
-    padding: 30px 7px 30px 10px;
-}
-@media print, screen and (max-width: 720px)
-section {
-    padding: 30px 7px 30px 10px;
-}
+    @media print, screen and (max-width: 480px) {
+        section {
+            padding: 30px 7px 30px 10px;
+        }
+    }
+    @media print, screen and (max-width: 720px) {
+        section {
+            padding: 30px 7px 30px 10px;
+        }
+    }
     .ga, .sa {
         border: 1px solid #4074b4;
     }
@@ -55,7 +74,9 @@ section {
 <body>
 
 <header>
-    <h1>My projects, Οι δουλειές μου..</h1>
+    <h1>
+        My projects, Οι δουλειές μου..
+    </h1>
     <p>
     Web design, Web Software, Scripts, Responsive HTML5/CSS3, XML, PHP, MySQL, Android, Linux
     </p>
@@ -72,13 +93,32 @@ section {
 <div id="banner">
     <span id="logo"></span>
     <!--<a href="https://github.com/libandreas" class="button fork"><strong>View On GitHub</strong></a>-->
-    <a class="button fork"><strong>pa.andreas@yandex.com</strong></a>
+    <a id="genericbutton" onclick="$('#genericemail').show();$('#genericbutton').hide();" class="button fork"><strong>Επικοινωνία</strong></a>
+    <a style="display: none" id="genericemail" href="mailto:pa.andreas@yandex.com" class="button fork">
+        <strong>pa.andreas@yandex.com</strong>
+    </a>
 </div><!-- end banner -->
 
 <div class="wrapper">
 <section>
 
-<p>Ιστοσελίδες, κατασκευή - υποστήριξη - διορθώσεις - αλλαγές, επεξεργασία δεδομένων ή προϊόντων, αλλαγή βάσης δεδομένων, αλλαγές σε εμφανισιακά χαρακτηριστικά (CSS) προγραμματισμός PHP, δημιουργία φιλικών σελίδων προς τη Google και τα κινητά, δημιουργία πάνελ για ανανέωση σελίδων από διαχειριστές, δημιουργία εφαρμογών, ενασχόληση με ροές και Api, 6 χρόνια εμπειρία, επικοινωνήστε <a href="mailto:pa.andreas@yandex.com">εδώ</a> (pa.andreas@yandex.com).</p>
+    <p>
+        Καλώς ήρθατε στο Portfolio μου, έφτιαξα αυτή τη σελίδα πριν αρκετό καιρό για να μπορώ να ανεβάζω τις δουλειές που φτιάχνω, ώστε να έχω κάτι να δείξω, για όποιον με ρωτήσει "τι έχω φτιάξει", είναι λογικό να θέλετε να δείτε με τη ασχολούμαι περισσότερο, καθώς και τι πράγματα μπορώ να φτιάξω, πριν συνεργαστείτε μαζί μου.
+    </p>
+
+    <h3>Συνοπτικά, αναλαμβάνω τα εξής:</h3>
+    <ul>
+        <li>Κατασκευή Ιστοσελίδων..</li>
+        <li>Διορθώσεις, αλλαγές, και συντήρηση ιστοσελίδων.</li>
+        <li>Δημιουργία φιλικών σελίδων προς τη Google και τα κινητά.</li>
+        <li>Επεξεργασία δεδομένων ή προϊόντων.</li>
+        <li>Αλλαγές σε βάσεις δεδομένων.</li>
+        <li>Δημιουργία εφαρμογών/app, για WEB ή Android.</li>
+        <li>Ροές, Api, Feed..</li>
+        <li>Συλλογή πληροφοριών από άλλες σελίδες ή παλιές στατικές σελίδες.</li>
+        <li>Αλλαγή οποιαδήποτε παλιάς σελίδας, ώστε να εμφανίζετε σωστά και πλέων όμορφα σε οποιαδήποτε συσκευή, κρατώντας, όλα τα προϊόντα, τις ρυθμίσεις, την επισκεψιμότητα, την λειτουργία, καθώς και οποιαδήποτε πάνελ διαχείρισης των C.M.S.</li>
+    </ul>
+    <p><i>6 χρόνια εμπειρία θα σας δείξουν πως οτιδήποτε φτιάχνω είναι υψηλής ποιοτητα, απαλαγμένο απο κλασικά προβλήματα.</i></p>
 
 <h1>Big Projects</h1>
 <i>
