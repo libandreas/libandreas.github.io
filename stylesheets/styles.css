@@ -1,6 +1,6 @@
 /*
 Leap Day for GitHub Pages
-by Matt Graham
+by Matt Graham, modified.
 */
 @font-face {
   font-family: 'Quattrocento Sans';
@@ -363,7 +363,7 @@ fieldset {
 
 /*
  * 1. Corrects color not being inherited in IE6/7/8/9
- * 2. Corrects text not wrapping in FF3 
+ * 2. Corrects text not wrapping in FF3
  * 3. Corrects alignment displayed oddly in IE6/7
  */
 legend {
@@ -706,6 +706,7 @@ header p {
   -khtml-border-radius: 0px 2px 2px 0px;
   border-radius: 0px 2px 2px 0px;
   padding-right: 10px;
+  box-sizing: border-box;
 }
 #banner .button {
   border: 1px solid #dba500;
@@ -836,8 +837,8 @@ header p {
   top: 7px;
   display: block;
   background: url(http://i.imgur.com/lCddPdG.png);
-background-size:100%;
-background-repeat:no-repeat;
+  background-size:100%;
+  background-repeat:no-repeat;
 }
 
 section {
@@ -965,6 +966,7 @@ footer {
   header {
     padding: 20px 20px;
     margin: 0;
+    padding-top: 56px;
   }
   header h1 {
     font-size: 32px;
@@ -976,7 +978,9 @@ footer {
   }
 
   #banner {
-    top: 80px;
+    /* top: 80px; */
+    position: absolute;
+    top: 0;
   }
   #banner .fork {
     float: left;
@@ -987,10 +991,12 @@ footer {
   }
 
   section {
-    margin-top: 130px;
+    margin-top: 165px;
     margin-bottom: 0px;
     width: auto;
     padding: 30px 10px 50px 14px !important;
+    line-height: 1.4;
+    font-size: 110%;
   }
 
   header ul, header p.view {
@@ -1002,6 +1008,9 @@ footer {
     position: relative;
     padding: 5px 0px;
     min-height: 0px;
+    padding-top: 56px;
+    padding-bottom: 9px;
+    top: 6px;
   }
   header h1 {
     font-size: 24px;
@@ -1014,11 +1023,13 @@ footer {
 
   section {
     margin-top: 5px;
-    padding: 30px 10px 50px 14px !important;
+    padding: 15px 10px 50px 14px !important;
   }
 
   #banner {
-    display: none;
+    /* display: none; */
+    position: absolute;
+    top: 0;
   }
 
   header ul {
