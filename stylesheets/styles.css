@@ -1002,6 +1002,14 @@ footer {
   header ul, header p.view {
     position: static;
   }
+  fouter {
+    text-align: center;
+    margin: 20px auto;
+    position: relative;
+    left: auto;
+    bottom: auto;
+    width: auto;
+  }
 }
 @media print, screen and (max-width: 480px) {
   header {
@@ -1048,12 +1056,12 @@ footer {
 }
 @media print, screen and (max-height: 680px) {
   footer {
-    text-align: center;
+    /* text-align: center;
     margin: 20px auto;
     position: relative;
     left: auto;
     bottom: auto;
-    width: auto;
+    width: auto; */
   }
 }
 @media print, screen and (max-height: 480px) {
