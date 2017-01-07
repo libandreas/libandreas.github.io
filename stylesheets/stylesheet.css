@@ -162,9 +162,6 @@ pre, code {
   border-radius: 2px;
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
-
-
-
 }
 
 pre {
@@ -415,5 +412,4 @@ Small Device Styles
     max-width: 480px;
     font-size: 11px;
   }
-
 }
