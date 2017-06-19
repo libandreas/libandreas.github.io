@@ -980,11 +980,18 @@ footer {
     width: auto;
   }
 }
+.mobile {
+  display:none;
+}
 @media print, screen and (max-width: 720px) {
   body {
     word-wrap: break-word;
   }
 
+  section img {
+    width: 99% !important;
+    margin-top: 9px;
+  }
   p, ul, ol, table, pre, dl, .ga, .sa {
     font-size:14pt !important;
   }
@@ -995,10 +1002,16 @@ footer {
   }
 
   h1 {
-    margin: 28px 0;
+    margin: 26px 0;
   }
   h2 {
-    margin: 19px 0px;
+    margin: 17px 0px;
+  }
+  .desktop {
+    display:none;
+  }
+  .mobile {
+    display:inherit;
   }
 
   header {
@@ -1053,7 +1066,7 @@ footer {
   .ga, .sa {
     display: block !important;
     padding: 14px !important;
-    margin: 23px !important;
+    margin: 21px !important;
     font-size: 12pt !important;
   }
 }
@@ -1082,7 +1095,7 @@ footer {
 
   #banner {
     /* display: none; */
-    position: absolute;
+    position: fixed;
     top: 0;
   }
   .fork {
@@ -1148,7 +1161,7 @@ p, ul, ol, table, pre, dl {
 }
 img
 {
-  border: 1px solid #4074b4;
+  border: 1px solid slategray;
   border-radius: 6px;
   width: 49%;
   display: inline-block;
