@@ -919,6 +919,7 @@ footer {
   }
   header {
     padding-top: 70px;
+    position: absolute;
     padding-bottom: 15px;
     padding-left: 0;
     padding-right: 0;
