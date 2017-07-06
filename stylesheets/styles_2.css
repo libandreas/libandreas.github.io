@@ -703,13 +703,14 @@ header p {
   box-sizing: border-box;
 }
 #banner .button {
-  border: 1px solid #dba500;
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe788), color-stop(100%, #ffce38));
-  background: -webkit-linear-gradient(#ffe788, #ffce38);
-  background: -moz-linear-gradient(#ffe788, #ffce38);
-  background: -o-linear-gradient(#ffe788, #ffce38);
-  background: -ms-linear-gradient(#ffe788, #ffce38);
-  background: linear-gradient(#ffe788, #ffce38);
+  border: 1px solid #937ae8;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #dedbf9), color-stop(100%, #d2cef7));
+  background: -webkit-linear-gradient(#dedbf9, #d2cef7);
+  background: -moz-linear-gradient(#dedbf9, #d2cef7);
+  background: -o-linear-gradient(#dedbf9, #d2cef7);
+  background: -ms-linear-gradient(#dedbf9, #d2cef7);
+  background: linear-gradient(#dedbf9, #d2cef7);
+  background: linear-gradient(#dedbf9, #d2cef7);
   -moz-border-radius: 2px;
   -webkit-border-radius: 2px;
   -o-border-radius: 2px;
@@ -731,13 +732,13 @@ header p {
   text-align: center;
 }
 #banner .button:hover {
-  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #ffe788), color-stop(100%, #ffe788));
-  background: -webkit-linear-gradient(#ffe788, #ffe788);
-  background: -moz-linear-gradient(#ffe788, #ffe788);
-  background: -o-linear-gradient(#ffe788, #ffe788);
-  background: -ms-linear-gradient(#ffe788, #ffe788);
-  background: linear-gradient(#ffe788, #ffe788);
-  background-color: #ffeca0;
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #d2cef7), color-stop(100%, #d2cef7));
+  background: -webkit-linear-gradient(#d2cef7, #d2cef7);
+  background: -moz-linear-gradient(#d2cef7, #d2cef7);
+  background: -o-linear-gradient(#d2cef7, #d2cef7);
+  background: -ms-linear-gradient(#d2cef7, #d2cef7);
+  background: linear-gradient(#d2cef7, #d2cef7);
+  background-color: #d2cef7;
 }
 #banner .fork {
   position: fixed;
