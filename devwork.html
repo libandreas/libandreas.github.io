@@ -13,6 +13,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<link rel="icon" type="image/x-icon" href="Aspirina.gr.ico">
 	<link href="lightbox.css" rel="stylesheet" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Andreas 360 (PortFolio)" />
@@ -38,7 +39,7 @@
 		</h1>
 		<h3 style="color:#cddcff">
 			PHP &bull; HTML &bull; CSS &bull; SQL &bull; Json &bull; Mobile Friendly &bull; Google Friendly &bull;
-			Custom Apps &bull; Android &bull; Windows &bull; Linux &bull; <strong>Artificial Intelligence</strong>
+			Custom Apps &bull; Android &bull; Windows &bull; Linux &bull; <strong style="color:crimson">Artificial Intelligence</strong>
 		</h3>
 	</header>
 
@@ -76,48 +77,61 @@
 
 			<h2><a href="https://insuranceplace.gr/" target="_blank">Insurance Place</a></h2>
 			<!-- Slider Start -->
-            <div id="custom-slider" style="position:relative;max-width:100%;margin:auto;">
-                <a class="slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/OcwFHMO.png">
-                    <img class="slider-img" src="https://i.imgur.com/OcwFHMO.png" style="width:100%;height:auto;display:block;" />
-                </a>
-                <a class="slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/o9wRaXv.png">
-                    <img class="slider-img" src="https://i.imgur.com/o9wRaXv.png" style="width:100%;height:auto;display:none;" />
-                </a>
-                <a class="slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/AXliWnZ.png">
-                    <img class="slider-img" src="https://i.imgur.com/AXliWnZ.png" style="width:100%;height:auto;display:none;" />
-                </a>
-                <a class="slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/qzj9rDV.png">
-                    <img class="slider-img" src="https://i.imgur.com/qzj9rDV.png" style="width:100%;height:auto;display:none;" />
-                </a>
-                <a class="slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/wjGbqcN.png">
-                    <img class="slider-img" src="https://i.imgur.com/wjGbqcN.png" style="width:100%;height:auto;display:none;" />
-                </a>
-                <a class="slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/9BCdsOL.png">
-                    <img class="slider-img" src="https://i.imgur.com/9BCdsOL.png" style="width:100%;height:auto;display:none;" />
-                </a>
-                <button id="slider-prev" style="position:absolute;top:50%;left:10px;transform:translateY(-50%);background:rgba(0,0,0,0.4);color:#fff;border:none;padding:8px 12px;cursor:pointer;font-size:18px;z-index:2;">&#10094;</button>
-                <button id="slider-next" style="position:absolute;top:50%;right:10px;transform:translateY(-50%);background:rgba(0,0,0,0.4);color:#fff;border:none;padding:8px 12px;cursor:pointer;font-size:18px;z-index:2;">&#10095;</button>
+            <div class="swiper" style="max-width:100%;margin:auto;">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/OcwFHMO.png">
+                            <img src="https://i.imgur.com/OcwFHMO.png" style="width:100%;height:auto;" />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/o9wRaXv.png">
+                            <img src="https://i.imgur.com/o9wRaXv.png" style="width:100%;height:auto;" />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/AXliWnZ.png">
+                            <img src="https://i.imgur.com/AXliWnZ.png" style="width:100%;height:auto;" />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/qzj9rDV.png">
+                            <img src="https://i.imgur.com/qzj9rDV.png" style="width:100%;height:auto;" />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/wjGbqcN.png">
+                            <img src="https://i.imgur.com/wjGbqcN.png" style="width:100%;height:auto;" />
+                        </a>
+                    </div>
+                    <div class="swiper-slide">
+                        <a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/9BCdsOL.png">
+                            <img src="https://i.imgur.com/9BCdsOL.png" style="width:100%;height:auto;" />
+                        </a>
+                    </div>
+                </div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
             </div>
-            <!-- Slider End -->
+            <!-- Swiper Slider End -->
 
             <script>
-            $(function(){
-                var total = $('#custom-slider .slider-img').length;
-                var current = 0;
-                function showSlide(idx) {
-                    $('#custom-slider .slider-img').hide().eq(idx).show();
-                    $('#custom-slider .slider-img-link').hide().eq(idx).show();
-                }
-                $('#custom-slider .slider-img-link').hide().eq(0).show();
-                $('#custom-slider .slider-img').hide().eq(0).show();
-                $('#slider-prev').click(function(){
-                    current = (current - 1 + total) % total;
-                    showSlide(current);
-                });
-                $('#slider-next').click(function(){
-                    current = (current + 1) % total;
-                    showSlide(current);
-                });
+            var swiper = new Swiper('.swiper', {
+                loop: true,
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                },
+                slidesPerView: 1,
+                spaceBetween: 10,
+                autoHeight: true,
             });
             </script>
 
@@ -381,6 +395,7 @@
 	</div>
 	<!--[if !IE]><script>fixScale(document);</script><![endif]-->
 	<script src="lightbox.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 	<script>
 		var lightboxOnResize = function lightboxOnResize() {
 			if ($(window).width() < 720) {
