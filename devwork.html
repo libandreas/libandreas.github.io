@@ -75,20 +75,51 @@
 			<hr>
 
 			<h2><a href="https://insuranceplace.gr/" target="_blank">Insurance Place</a></h2>
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/OcwFHMO.png"><img
-					src="https://i.imgur.com/OcwFHMO.png" /></a>
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/o9wRaXv.png"><img
-					src="https://i.imgur.com/o9wRaXv.png" /></a>
+			<!-- Slider Start -->
+            <div id="custom-slider" style="position:relative;max-width:100%;margin:auto;">
+                <a class="slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/OcwFHMO.png">
+                    <img class="slider-img" src="https://i.imgur.com/OcwFHMO.png" style="width:100%;height:auto;display:block;" />
+                </a>
+                <a class="slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/o9wRaXv.png">
+                    <img class="slider-img" src="https://i.imgur.com/o9wRaXv.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/AXliWnZ.png">
+                    <img class="slider-img" src="https://i.imgur.com/AXliWnZ.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/qzj9rDV.png">
+                    <img class="slider-img" src="https://i.imgur.com/qzj9rDV.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/wjGbqcN.png">
+                    <img class="slider-img" src="https://i.imgur.com/wjGbqcN.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/9BCdsOL.png">
+                    <img class="slider-img" src="https://i.imgur.com/9BCdsOL.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <button id="slider-prev" style="position:absolute;top:50%;left:10px;transform:translateY(-50%);background:rgba(0,0,0,0.4);color:#fff;border:none;padding:8px 12px;cursor:pointer;font-size:18px;z-index:2;">&#10094;</button>
+                <button id="slider-next" style="position:absolute;top:50%;right:10px;transform:translateY(-50%);background:rgba(0,0,0,0.4);color:#fff;border:none;padding:8px 12px;cursor:pointer;font-size:18px;z-index:2;">&#10095;</button>
+            </div>
+            <!-- Slider End -->
 
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/AXliWnZ.png"><img
-					style="width: 32.1%;height: auto" src="https://i.imgur.com/AXliWnZ.png" /></a>
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/qzj9rDV.png"><img
-					style="width: 32.1%;height: auto" src="https://i.imgur.com/qzj9rDV.png" /></a>
-
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/wjGbqcN.png"><img
-					style="width: 32.1%;height: auto" src="https://i.imgur.com/wjGbqcN.png" /></a>
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/9BCdsOL.png"><img
-					style="width: 32.1%;height: auto" src="https://i.imgur.com/9BCdsOL.png" /></a>
+            <script>
+            $(function(){
+                var total = $('#custom-slider .slider-img').length;
+                var current = 0;
+                function showSlide(idx) {
+                    $('#custom-slider .slider-img').hide().eq(idx).show();
+                    $('#custom-slider .slider-img-link').hide().eq(idx).show();
+                }
+                $('#custom-slider .slider-img-link').hide().eq(0).show();
+                $('#custom-slider .slider-img').hide().eq(0).show();
+                $('#slider-prev').click(function(){
+                    current = (current - 1 + total) % total;
+                    showSlide(current);
+                });
+                $('#slider-next').click(function(){
+                    current = (current + 1) % total;
+                    showSlide(current);
+                });
+            });
+            </script>
 
 			<p>
 				Απλή ιστοσελίδα για ασφαλιστικό γραφείο με τα τυπικά, όμορφο design &bull; Custom wordpress theme</p>
