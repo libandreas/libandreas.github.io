@@ -38,7 +38,7 @@
 		</h1>
 		<h3 style="color:#cddcff">
 			PHP &bull; HTML &bull; CSS &bull; SQL &bull; Json &bull; Mobile Friendly &bull; Google Friendly &bull;
-			Custom Apps &bull; Android &bull; Windows &bull; Linux &bull; <strong>Artificial Intelligence</strong>
+			Custom Apps &bull; Android &bull; Windows &bull; Linux &bull; <strong title="Artificial Intelligence" style="color:rgb(252, 73, 109)">AI</strong>
 		</h3>
 	</header>
 
@@ -188,17 +188,49 @@
 			<hr>
 
 			<h2><a href="https://themarketeers.gr/" target="_blank">TheMarketeers</a></h2>
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/OIiRoxO.png"><img
-					src="https://i.imgur.com/OIiRoxO.png" /></a>
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/D0rKPTv.png"><img
-					src="https://i.imgur.com/D0rKPTv.png" /></a>
+			<!-- Slider Start -->
+            <div id="marketeers-slider" style="position:relative;max-width:100%;margin:auto;">
+                <a class="marketeers-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/OIiRoxO.png">
+                    <img class="marketeers-slider-img" src="https://i.imgur.com/OIiRoxO.png" style="width:100%;height:auto;display:block;" />
+                </a>
+                <a class="marketeers-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/D0rKPTv.png">
+                    <img class="marketeers-slider-img" src="https://i.imgur.com/D0rKPTv.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="marketeers-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/LbKWImq.png">
+                    <img class="marketeers-slider-img" src="https://i.imgur.com/LbKWImq.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="marketeers-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/FxwCbEX.png">
+                    <img class="marketeers-slider-img" src="https://i.imgur.com/FxwCbEX.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="marketeers-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/eEn2VhO.png">
+                    <img class="marketeers-slider-img" src="https://i.imgur.com/eEn2VhO.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <button id="marketeers-slider-prev" style="position:absolute;top:50%;left:10px;transform:translateY(-50%);background:rgba(0,0,0,0.4);color:#fff;border:none;padding:8px 12px;cursor:pointer;font-size:18px;z-index:2;">&#10094;</button>
+                <button id="marketeers-slider-next" style="position:absolute;top:50%;right:10px;transform:translateY(-50%);background:rgba(0,0,0,0.4);color:#fff;border:none;padding:8px 12px;cursor:pointer;font-size:18px;z-index:2;">&#10095;</button>
+            </div>
+            <!-- Slider End -->
 
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/LbKWImq.png"><img
-					style="width: 32.1%;height: auto" src="https://i.imgur.com/LbKWImq.png" /></a>
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/FxwCbEX.png"><img
-					style="width: 32.1%;height: auto" src="https://i.imgur.com/FxwCbEX.png" /></a>
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/eEn2VhO.png"><img
-					style="width: 33.2%;height: auto" src="https://i.imgur.com/eEn2VhO.png" /></a>
+            <script>
+            $(function(){
+                var totalM = $('#marketeers-slider .marketeers-slider-img').length;
+                var currentM = 0;
+                function showMarketeersSlide(idx) {
+                    $('#marketeers-slider .marketeers-slider-img').hide().eq(idx).show();
+                    $('#marketeers-slider .marketeers-slider-img-link').hide().eq(idx).show();
+                }
+                $('#marketeers-slider .marketeers-slider-img-link').hide().eq(0).show();
+                $('#marketeers-slider .marketeers-slider-img').hide().eq(0).show();
+                $('#marketeers-slider-prev').click(function(){
+                    currentM = (currentM - 1 + totalM) % totalM;
+                    showMarketeersSlide(currentM);
+                });
+                $('#marketeers-slider-next').click(function(){
+                    currentM = (currentM + 1) % totalM;
+                    showMarketeersSlide(currentM);
+                });
+            });
+            </script>
+
 			<p>
 				Απλή σελίδα γραφείου, με έμφαση στα γραφικά, υπάρχουν σελίδες παρουσιάσεις προϊόντων που παρουσιάζουν τα
 				προϊόντα κατά στήλες σε υπολογιστές και κατά σειρά στα κινητά. </p>
@@ -220,20 +252,51 @@
 
 				<a target="_blank" href="https://ependitikiefkeria.gr/">Επενδυτική Ευκαιρία</a>
 			</h2>
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/FNMdh1t.png"><img
-					alt="" src="https://i.imgur.com/FNMdh1t.png" /></a>
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/6RToD6s.png"><img
-					alt="" src="https://i.imgur.com/6RToD6s.png" /></a>
+			<!-- Slider Start -->
+            <div id="ependytiki-slider" style="position:relative;max-width:100%;margin:auto;">
+                <a class="ependytiki-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/FNMdh1t.png">
+                    <img class="ependytiki-slider-img" src="https://i.imgur.com/FNMdh1t.png" style="width:100%;height:auto;display:block;" />
+                </a>
+                <a class="ependytiki-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/6RToD6s.png">
+                    <img class="ependytiki-slider-img" src="https://i.imgur.com/6RToD6s.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="ependytiki-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/s0frzEO.png">
+                    <img class="ependytiki-slider-img" src="https://i.imgur.com/s0frzEO.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="ependytiki-slider-img-link" data-lightbox="image-1" target="_blank" href="https://imgur.com/oIl5eOt.png">
+                    <img class="ependytiki-slider-img" src="https://imgur.com/oIl5eOt.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="ependytiki-slider-img-link" data-lightbox="image-1" target="_blank" href="https://imgur.com/lLiIcYX.png">
+                    <img class="ependytiki-slider-img" src="https://imgur.com/lLiIcYX.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="ependytiki-slider-img-link" data-lightbox="image-1" target="_blank" href="https://imgur.com/pFbRMWF.png">
+                    <img class="ependytiki-slider-img" src="https://imgur.com/pFbRMWF.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <button id="ependytiki-slider-prev" style="position:absolute;top:50%;left:10px;transform:translateY(-50%);background:rgba(0,0,0,0.4);color:#fff;border:none;padding:8px 12px;cursor:pointer;font-size:18px;z-index:2;">&#10094;</button>
+                <button id="ependytiki-slider-next" style="position:absolute;top:50%;right:10px;transform:translateY(-50%);background:rgba(0,0,0,0.4);color:#fff;border:none;padding:8px 12px;cursor:pointer;font-size:18px;z-index:2;">&#10095;</button>
+            </div>
+            <!-- Slider End -->
 
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/s0frzEO.png"><img
-					alt="" src="https://i.imgur.com/s0frzEO.png" /></a>
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://imgur.com/oIl5eOt.png"><img
-					alt="" src="https://imgur.com/oIl5eOt.png" /></a>
-
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://imgur.com/lLiIcYX.png"><img
-					alt="" src="https://imgur.com/lLiIcYX.png" /></a>
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://imgur.com/pFbRMWF.png"><img
-					alt="" src="https://imgur.com/pFbRMWF.png" /></a>
+            <script>
+            $(function(){
+                var totalE = $('#ependytiki-slider .ependytiki-slider-img').length;
+                var currentE = 0;
+                function showEpendytikiSlide(idx) {
+                    $('#ependytiki-slider .ependytiki-slider-img').hide().eq(idx).show();
+                    $('#ependytiki-slider .ependytiki-slider-img-link').hide().eq(idx).show();
+                }
+                $('#ependytiki-slider .ependytiki-slider-img-link').hide().eq(0).show();
+                $('#ependytiki-slider .ependytiki-slider-img').hide().eq(0).show();
+                $('#ependytiki-slider-prev').click(function(){
+                    currentE = (currentE - 1 + totalE) % totalE;
+                    showEpendytikiSlide(currentE);
+                });
+                $('#ependytiki-slider-next').click(function(){
+                    currentE = (currentE + 1) % totalE;
+                    showEpendytikiSlide(currentE);
+                });
+            });
+            </script>
 
 			<p>
 				Πλατφόρμα real estate για τη διαχείριση ακινήτων, επιτρέπει σε
@@ -252,32 +315,57 @@
 
 			<hr>
 			<h2><a target="_blank" href="https://hdoueleiamou.gr/">Η δουλειά μου</a></h2>
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/U2Xk2oz.png"><img
-					alt="" src="https://i.imgur.com/U2Xk2oz.png" /></a>
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/x4bior6.png"><img
-					alt="https://i.imgur.com/x4bior6.png" src="https://i.imgur.com/x4bior6.png" /></a>
+			<!-- Slider Start -->
+            <div id="hdouleiamou-slider" style="position:relative;max-width:100%;margin:auto;">
+                <a class="hdouleiamou-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/U2Xk2oz.png">
+                    <img class="hdouleiamou-slider-img" src="https://i.imgur.com/U2Xk2oz.png" style="width:100%;height:auto;display:block;" />
+                </a>
+                <a class="hdouleiamou-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/x4bior6.png">
+                    <img class="hdouleiamou-slider-img" src="https://i.imgur.com/x4bior6.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="hdouleiamou-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/rONJyNY.png">
+                    <img class="hdouleiamou-slider-img" src="https://i.imgur.com/rONJyNY.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="hdouleiamou-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/7d50yci.png">
+                    <img class="hdouleiamou-slider-img" src="https://i.imgur.com/7d50yci.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="hdouleiamou-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/U3Gm7Bx.png">
+                    <img class="hdouleiamou-slider-img" src="https://i.imgur.com/U3Gm7Bx.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="hdouleiamou-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/7s3d3Rj.png">
+                    <img class="hdouleiamou-slider-img" src="https://i.imgur.com/7s3d3Rj.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="hdouleiamou-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/LUgTl7Y.png">
+                    <img class="hdouleiamou-slider-img" src="https://i.imgur.com/LUgTl7Y.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="hdouleiamou-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/EWnlqNC.png">
+                    <img class="hdouleiamou-slider-img" src="https://i.imgur.com/EWnlqNC.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <button id="hdouleiamou-slider-prev" style="position:absolute;top:50%;left:10px;transform:translateY(-50%);background:rgba(0,0,0,0.4);color:#fff;border:none;padding:8px 12px;cursor:pointer;font-size:18px;z-index:2;">&#10094;</button>
+                <button id="hdouleiamou-slider-next" style="position:absolute;top:50%;right:10px;transform:translateY(-50%);background:rgba(0,0,0,0.4);color:#fff;border:none;padding:8px 12px;cursor:pointer;font-size:18px;z-index:2;">&#10095;</button>
+            </div>
+            <!-- Slider End -->
 
-
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/rONJyNY.png">
-				<img alt="" src="https://i.imgur.com/rONJyNY.png" />
-			</a>
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/7d50yci.png">
-				<img alt="" src="https://i.imgur.com/7d50yci.png" />
-			</a>
-
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/U3Gm7Bx.png">
-				<img alt="" src="https://i.imgur.com/U3Gm7Bx.png" />
-			</a>
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/7s3d3Rj.png">
-				<img alt="" src="https://i.imgur.com/7s3d3Rj.png" />
-			</a>
-
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/LUgTl7Y.png">
-				<img alt="" src="https://i.imgur.com/LUgTl7Y.png" />
-			</a>
-			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/EWnlqNC.png">
-				<img alt="" src="https://i.imgur.com/EWnlqNC.png" />
-			</a>
+            <script>
+            $(function(){
+                var totalH = $('#hdouleiamou-slider .hdouleiamou-slider-img').length;
+                var currentH = 0;
+                function showHdouleiamouSlide(idx) {
+                    $('#hdouleiamou-slider .hdouleiamou-slider-img').hide().eq(idx).show();
+                    $('#hdouleiamou-slider .hdouleiamou-slider-img-link').hide().eq(idx).show();
+                }
+                $('#hdouleiamou-slider .hdouleiamou-slider-img-link').hide().eq(0).show();
+                $('#hdouleiamou-slider .hdouleiamou-slider-img').hide().eq(0).show();
+                $('#hdouleiamou-slider-prev').click(function(){
+                    currentH = (currentH - 1 + totalH) % totalH;
+                    showHdouleiamouSlide(currentH);
+                });
+                $('#hdouleiamou-slider-next').click(function(){
+                    currentH = (currentH + 1) % totalH;
+                    showHdouleiamouSlide(currentH);
+                });
+            });
+            </script>
 
 			<p>
 				Online πλατφόρμα για την διαχείριση και την πώληση υπηρεσιών, είναι ένα σύστημα που επιτρέπει σε
