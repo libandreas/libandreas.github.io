@@ -1,0 +1,89 @@
+# Application and dependencies
+/www/
+/wasm/
+/common/
+/vendor/
+/users/**/*.md
+/users/**/*.txt
+/users/**/*.json
+/users/**/*.csv
+/node_modules/
+/katex/
+/models/
+/models-v3/
+/tessdata/
+/dictionaries/
+
+# VS Code and browser extension packaging
+/extension.js
+/package.json
+/package-lock.json
+/.vscodeignore
+/.chromeignore
+/manifest.json
+/service-worker.js
+*.vsix
+
+# JetBrains and Gradle
+/src/
+/gradle/
+/.gradle/
+/.gradle-runtime/
+/.intellijPlatform/
+/build/
+/out/
+/build.gradle.kts
+/settings.gradle.kts
+/gradle.properties
+/gradlew
+/gradlew.bat
+/.jbignore
+*.iml
+
+# Local editor and agent settings
+/.vscode/
+/.idea/
+/.zed/
+/.skia/
+/.agents/
+/.codex
+/.codex-remote-attachments/
+/.qodo/
+/.stignore
+
+# Private data and credentials
+.env
+.env.*
+rclone.conf
+auth.json
+sftp.json
+/users.json
+/email-list.json
+/users-clean.txt
+/users-subscription.txt
+/urls-reset.txt
+/analytics.csv
+/app-stats.csv
+/login-attempts.txt
+
+# Cache and logs
+/cache/
+*.log
+
+# Local tools and tests
+/tests/
+/scripts/
+/composer-setup.php
+/composer.phar
+/composer.json
+/composer.lock
+
+# PHP
+*.php
+
+# Temporary files
+*.tmp
+*.bak
+.DS_Store
+Thumbs.db
+.skia/

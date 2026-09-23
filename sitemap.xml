@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://ceres-assistant.com/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://ceres-assistant.com/ceres-ide/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ceres-assistant.com/ceres-browser/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ceres-assistant.com/luna-crop/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ceres-assistant.com/whirlpool/</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ceres-assistant.com/whirlpool/index-el.php</loc><changefreq>weekly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://ceres-assistant.com/posts/</loc><changefreq>daily</changefreq><priority>0.8</priority></url>
+  <url><loc>https://ceres-assistant.com/web/pricing.php</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ceres-assistant.com/web/contact.php</loc><changefreq>yearly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://ceres-assistant.com/web/newsletter.php</loc><changefreq>monthly</changefreq><priority>0.5</priority></url>
+  <url><loc>https://ceres-assistant.com/web/privacy-policy.php</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://ceres-assistant.com/web/privacy-policy-luna.php</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://ceres-assistant.com/web/privacy-policy-whirlpool.php</loc><changefreq>yearly</changefreq><priority>0.3</priority></url>
+  <url><loc>https://ceres-assistant.com/web/troubleshoot.php</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://ceres-assistant.com/web/troubleshoot-luna.php</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://ceres-assistant.com/web/troubleshoot-whirlpool.php</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://ceres-assistant.com/web/troubleshoot-whirlpool-el.php</loc><changefreq>monthly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://ceres-assistant.com/posts/ceres-assistant-beta-for-vs-code</loc><lastmod>2026-04-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ceres-assistant.com/posts/ceres-browser-plugin-is-now-available</loc><lastmod>2026-05-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ceres-assistant.com/posts/ceres-vs-continue-dev-a-comparison-based-on-daily-use</loc><lastmod>2026-06-08</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ceres-assistant.com/posts/deepseek-v4-flash-code-review-without-the-token-burn</loc><lastmod>2026-07-07</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ceres-assistant.com/posts/ceres-is-now-available-for-jetbrains-ides</loc><lastmod>2026-07-09</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ceres-assistant.com/posts/how-to-edit-text-with-your-voice-inside-the-browser</loc><lastmod>2026-08-06</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ceres-assistant.com/posts/ceres-is-now-available-on-android</loc><lastmod>2026-08-31</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://ceres-assistant.com/posts/why-we-recommend-the-official-deepseek-api</loc><lastmod>2026-09-15</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+</urlset>

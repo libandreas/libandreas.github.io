@@ -1,0 +1,115 @@
+/* Order Page Specific Styles */
+:root {
+	--border-soft: rgba(0, 0, 0, 0.1);
+	--accent: #123c7c;
+}
+
+.order-main-container {
+	width: 100%;
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 16px;
+	border-radius: 20px;
+	border: 1px solid var(--border-soft);
+	background: #ffffff;
+	color: #111111;
+}
+
+.order-content-wrapper {
+	display: flex;
+	gap: 24px;
+	align-items: stretch;
+}
+
+.order-column-left,
+.order-column-right {
+	flex: 1;
+	min-width: 0;
+	background: #ffffff;
+	color: #111111;
+}
+
+.order-column-left form {
+	display: grid;
+	gap: 14px;
+}
+
+.order-column-left label,
+.order-title,
+.order-description,
+.expiry-info {
+	color: #111111;
+}
+
+.order-column-left input,
+.order-column-left select,
+.order-column-left textarea,
+.order-input,
+.order-select,
+.order-textarea {
+	width: 100%;
+	padding: 12px;
+	border-radius: 10px;
+	border: 1px solid var(--border-soft);
+	background: #ffffff;
+	color: #111111;
+	font: inherit;
+}
+
+.order-column-left input:focus,
+.order-column-left select:focus,
+.order-column-left textarea:focus {
+	outline: none;
+	border-color: rgba(18, 60, 124, 0.22);
+}
+
+.order-header {
+	margin-bottom: 0;
+	width: 100%;
+}
+
+.order-title {
+	margin-bottom: 10px;
+	font-size: 25px;
+	line-height: 1.16;
+}
+
+.order-main-container .hero-logo-small-2 {
+	width: 80px;
+	height: 80px;
+	margin: 15px 0;
+	filter: none;
+}
+
+.order-price {
+	margin: 15px 0 25px;
+	color: var(--accent);
+	font-size: 3em;
+	font-weight: 800;
+}
+
+.order-description {
+	margin-bottom: 20px;
+	font-size: 17px;
+	line-height: 1.62;
+}
+
+.expiry-info {
+	display: inline-block;
+	margin: 10px 0 30px;
+	padding: 12px 25px;
+	border: 1px solid var(--border-soft);
+	border-radius: 50px;
+	background: #ffffff;
+	font-size: 0.95em;
+	font-weight: 600;
+}
+
+.payment-method-info {
+	margin: 10px 0 25px;
+	color: var(--accent);
+	font-size: 1.8em;
+    font-weight: normal;
+    
+	font-family: 'Great Vibes', cursive;
+}

@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ceres: Lite AI coding assistant for VS Code</title>
+	<meta name="description" content="Predictable AI help in VS Code with voice input, file and selection chat, code review, compatible with OpenAI, DeepSeek and Ollama">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ceres-assistant.com/ceres-ide/">
+	<meta property="og:title" content="Ceres: Lite AI coding assistant for VS Code">
+	<meta property="og:description" content="Predictable AI help in VS Code with voice input, file and selection chat, code review, compatible with OpenAI, DeepSeek and Ollama">
+	<meta property="og:image" content="https://ceres-assistant.com/favicon-facebook.webp">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="630">
+	<meta property="og:site_name" content="Ceres">
+	<meta property="og:locale" content="en_US">
+
+	<!-- Twitter / X -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:url" content="https://ceres-assistant.com/ceres-ide/">
+	<meta name="twitter:title" content="Ceres: Lite AI coding assistant for VS Code">
+	<meta name="twitter:description" content="Predictable AI help in VS Code with voice input, file and selection chat, code review, compatible with OpenAI, DeepSeek and Ollama">
+	<meta name="twitter:image" content="https://ceres-assistant.com/favicon-facebook.webp">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- Removed the Tektur webfont link. -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="/web/styles.css">
+	<link rel="icon" href="/favicon.webp" type="image/webp">
+	<link rel="apple-touch-icon" href="/favicon-128-128.png">
+	<script data-goatcounter="https://pa-andreas.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+	<link rel="canonical" href="https://ceres-assistant.com/ceres-ide/">
+</head>
+
+<body class="product-theme-page">
+	<nav class="top-nav">
+		<div class="nav-content">
+			<div class="nav-left">
+				<a href="/" class="nav-logo">
+					<img src="/favicon.webp" alt="Ceres" title="Ceres" class="hero-logo-small">
+				</a>
+			</div>
+			<div class="nav-right">
+				<a href="/" class="nav-link">Home</a>
+				<a href="#products" class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">Products &#9662;</a>
+				<div class="dropdown-menu">
+					<a href="/ceres-browser/"><strong>Browser &amp; writing assistant</strong></a>
+					<a href="/ceres-ide/"><strong>Coding assistant</strong></a>
+					<a href="/luna-crop/"><strong>Image editor</strong></a>
+					<a href="/whirlpool/"><strong>Computer Search</strong></a>
+				</div>
+				<a href="/web/pricing.php" class="nav-link">Pricing</a>
+				<a href="/web/troubleshoot.php" class="nav-link">Help</a>
+				<a href="/web/login.php" class="nav-link muted-auth">Login</a>
+				<a href="https://marketplace.visualstudio.com/items?itemName=pa-andreas.skia-ai-sidebar" target="_blank" rel="noopener" class="nav-button"><img src="https://www.google.com/s2/favicons?domain=code.visualstudio.com&amp;sz=64" alt="Visual Studio Code"> Add to VS Code</a>
+			</div>
+		</div>
+	</nav>
+	<script src="/web/header.js"></script>
+
+	<main class="product-page">
+		<div class="product-shell">
+			<section class="product-intro-simple">
+				<div class="product-intro-simple-logo">
+					<img src="/favicon.webp" alt="Ceres logo">
+				</div>
+				<h1 class="product-intro-simple-title">Lite coding assistant for VS Code</h1>
+				<p class="product-intro-simple-description">In case of heavy agents that eat up computer memory and use tokens, Ceres takes a different approach: a lite coding assistant powered by your favorite LLM that just works.</p>
+				<div class="product-intro-simple-actions">
+					<div class="product-install-options">
+						<div class="product-install-option">
+							<a href="https://marketplace.visualstudio.com/items?itemName=pa-andreas.skia-ai-sidebar" class="pricing-cta" target="_blank" rel="noopener"><img src="https://www.google.com/s2/favicons?domain=code.visualstudio.com&amp;sz=64" alt="Visual Studio Code"> Add to VS Code</a>
+							<span class="download-with-icons product-intro-simple-platforms">
+								<span class="download-icons">
+									<a href="https://marketplace.visualstudio.com/items?itemName=pa-andreas.skia-ai-sidebar" target="_blank" rel="noopener" aria-label="Add Ceres for Visual Studio Code"><img src="https://www.google.com/s2/favicons?domain=code.visualstudio.com&amp;sz=64" alt="Visual Studio Code"></a>
+									<a href="https://plugins.jetbrains.com/plugin/32670-ceres--ai-coding-assistant-with-voice/" target="_blank" rel="noopener" aria-label="Add Ceres for IntelliJ IDEA"><img src="https://api.iconify.design/logos:intellij-idea.svg" alt="IntelliJ IDEA"></a>
+									<a href="https://plugins.jetbrains.com/plugin/32670-ceres--ai-coding-assistant-with-voice/" target="_blank" rel="noopener" aria-label="Add Ceres for WebStorm"><img src="https://api.iconify.design/logos:webstorm.svg" alt="WebStorm"></a>
+									<a href="https://plugins.jetbrains.com/plugin/32670-ceres--ai-coding-assistant-with-voice/" target="_blank" rel="noopener" aria-label="Add Ceres for PhpStorm"><img src="https://api.iconify.design/logos:phpstorm.svg" alt="PhpStorm"></a>
+									<a href="https://plugins.jetbrains.com/plugin/32670-ceres--ai-coding-assistant-with-voice/" target="_blank" rel="noopener" aria-label="Add Ceres for PyCharm"><img src="https://api.iconify.design/logos:pycharm.svg" alt="PyCharm"></a>
+									<a href="https://plugins.jetbrains.com/plugin/32670-ceres--ai-coding-assistant-with-voice/" target="_blank" rel="noopener" aria-label="Add Ceres for Rider"><img src="https://api.iconify.design/logos:rider.svg" alt="Rider"></a>
+									<a href="https://plugins.jetbrains.com/plugin/32670-ceres--ai-coding-assistant-with-voice/" target="_blank" rel="noopener" aria-label="Add Ceres for CLion"><img src="https://api.iconify.design/logos:clion.svg" alt="CLion"></a>
+									<a href="https://plugins.jetbrains.com/plugin/32670-ceres--ai-coding-assistant-with-voice/" target="_blank" rel="noopener" aria-label="Add Ceres for GoLand"><img src="https://api.iconify.design/logos:goland.svg" alt="GoLand"></a>
+									<a href="https://plugins.jetbrains.com/plugin/32670-ceres--ai-coding-assistant-with-voice/" target="_blank" rel="noopener" aria-label="Add Ceres for RubyMine"><img src="https://api.iconify.design/logos:rubymine.svg" alt="RubyMine"></a>
+								</span>
+							</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="product-section product-audience-section">
+				<div class="product-audience-intro">
+					<h2 class="product-section-title">Predictable AI help</h2>
+					<p>Take back control of your project with AI that helps you without taking the code out of your hands.</p>
+				</div>
+				<div class="product-audience-grid product-audience-grid-single">
+					<article class="product-audience-item">
+						<h3>Smart context, total control</h3>
+						<div class="product-audience-icon product-audience-icon-fire">⚖️</div>
+						<p>Use Navigation Mode to automatically find relevant workspace files, or turn it off to strictly use the blocks and files you manually select.</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="product-section">
+				<div class="product-shot">
+					<img src="../screenshots-new/2026-08-03_00-00-00.webp" alt="Ceres IDE sidebar using DeepSeek beside a PHP file" loading="lazy">
+				</div>
+			</section>
+
+			<section class="product-section product-audience-section">
+				<div class="product-audience-intro">
+					<h2 class="product-section-title">Speak to your code</h2>
+					<p>Use your voice to refactor functions and apply changes.</p>
+				</div>
+				<div class="product-audience-grid product-audience-grid-single">
+					<article class="product-audience-item">
+						<h3>Voice Prompting</h3>
+						<div class="product-audience-icon product-audience-icon-fire">🎙️</div>
+						<p>Speak naturally and request the necessary changes instead of writing.</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="product-section product-audience-section">
+				<div class="product-audience-intro">
+					<h2 class="product-section-title">Apply changes mode</h2>
+					<p>See exactly what will change before anything is written to your project.</p>
+				</div>
+				<div class="product-audience-grid product-audience-grid-single">
+					<article class="product-audience-item">
+						<h3>Apply changes when you need</h3>
+						<div class="product-audience-icon product-audience-icon-fire">⚡</div>
+						<p>Apply changes without copy and paste directly to the source base - review before you approve!</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="product-section">
+				<div class="product-shot">
+					<img src="../screenshots-new/2026-06-04_17-00-29.webp" alt="Ceres IDE diff review with reject and approve buttons" loading="lazy">
+				</div>
+			</section>
+
+			<section class="product-section product-audience-section">
+				<div class="product-audience-intro">
+					<h2 class="product-section-title">Use your favorite LLM in the code editor</h2>
+					<p>Use GPT, Claude, Gemini, Mistral, Mercury, DeepSeek, Qwen, and other compatible models directly inside your code editor.</p>
+				</div>
+				<div class="product-audience-grid product-audience-grid-single">
+					<article class="product-audience-item">
+						<h3>Bring your own API key</h3>
+						<div class="product-audience-icon product-audience-icon-fire">🔑</div>
+						<p>Connect your favorite LLM inside your IDE, whether it is a frontier model or a budget model.</p>
+					</article>
+					<article class="product-audience-item">
+						<h3>Designed for lightweight and budget-friendly models</h3>
+						<div class="product-audience-icon product-audience-icon-fire">🪶</div>
+						<p>Ceres is specially designed for lightweight and budget-friendly models.</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="pricing home-models-section">
+				<div>
+					<p class="product-section-title">Supported providers</p>
+					<p class="home-models-subtitle">Connect your preferred provider with your own API key.</p>
+				</div>
+				<div class="home-models-marquee">
+					<div class="home-models-track">
+						<div class="home-model-pill"><img src="https://www.google.com/s2/favicons?domain=openai.com&sz=64" alt="GPT logo"><span>GPT</span></div>
+						<div class="home-model-pill"><img src="https://www.google.com/s2/favicons?domain=anthropic.com&sz=64" alt="Claude logo"><span>Claude</span></div>
+						<div class="home-model-pill"><img src="https://www.google.com/s2/favicons?domain=gemini.google.com&sz=64" alt="Gemini logo"><span>Gemini</span></div>
+						<div class="home-model-pill"><img src="https://www.google.com/s2/favicons?domain=deepseek.com&sz=64" alt="DeepSeek logo"><span>DeepSeek</span></div>
+						<div class="home-model-pill"><img src="https://www.google.com/s2/favicons?domain=mistral.ai&sz=64" alt="Mistral logo"><span>Mistral</span></div>
+						<div class="home-model-pill"><img src="https://www.google.com/s2/favicons?domain=inceptionlabs.ai&sz=64" alt="Mercury logo"><span>Mercury</span></div>
+						<div class="home-model-pill"><img src="https://www.google.com/s2/favicons?domain=qwen.ai&sz=64" alt="Qwen logo"><span>Qwen</span></div>
+					</div>
+				</div>
+			</section>
+
+			<section class="product-section product-audience-section">
+				<div class="product-audience-intro">
+					<h2 class="product-section-title">Move between Chrome and your IDE</h2>
+					<div style="display: flex; align-items: center; justify-content: center; gap: 14px; margin: 24px 0; flex-wrap: wrap;">
+						<div style="display: grid; justify-items: center; gap: 8px; min-width: 90px;">
+							<img src="https://www.google.com/s2/favicons?domain=code.visualstudio.com&amp;sz=64" alt="Visual Studio Code" width="52" height="52" loading="lazy">
+							<strong>VS Code</strong>
+						</div>
+						<svg width="54" height="22" viewBox="0 0 54 22" role="img" aria-label="Live synchronization with Google Chrome">
+							<path d="M2 11H52M2 11L10 3M2 11L10 19M52 11L44 3M52 11L44 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+						<div style="display: grid; justify-items: center; gap: 8px; min-width: 90px;">
+							<img src="https://www.google.com/chrome/static/images/chrome-logo-m100.svg" alt="Google Chrome" width="52" height="52" loading="lazy">
+							<strong>Chrome</strong>
+						</div>
+						<svg width="54" height="22" viewBox="0 0 54 22" role="img" aria-label="Live synchronization with JetBrains IDEs">
+							<path d="M2 11H52M2 11L10 3M2 11L10 19M52 11L44 3M52 11L44 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+						</svg>
+						<div style="display: grid; justify-items: center; gap: 8px; min-width: 90px;">
+							<img src="https://api.iconify.design/logos:intellij-idea.svg" alt="JetBrains IDEs" width="52" height="52" loading="lazy">
+							<strong>JetBrains</strong>
+						</div>
+					</div>
+					<p>Keep Ceres open in Chrome and your IDE at the same time. Your conversation and current draft update automatically, so you can move between the browser and your code without starting over.</p>
+				</div>
+				<div class="product-audience-grid product-audience-grid-single">
+					<article class="product-audience-item">
+						<h3>Research in Chrome, code in your IDE</h3>
+						<div class="product-audience-icon product-audience-icon-fire">🌐</div>
+						<p>Use the browser to explore pages and collect useful information, then continue the same conversation beside your project in Visual Studio Code or a JetBrains IDE.</p>
+					</article>
+				</div>
+				<p class="product-note-italic">Live synchronization requires the browser extension to have access to the same local project folder. Available with Visual Studio Code and supported JetBrains IDEs.</p>
+			</section>
+
+			<section class="product-section">
+				<div class="product-capability-shell">
+					<div class="product-capability-intro">
+						<h2 class="product-section-title">A light, budget-friendly coding assistant for your favorite IDE.
+						</h2>
+						<p>Fix issues and grow your project with your rules without keeping agents running in the background.</p>
+					</div>
+					<div class="product-capability-grid">
+						<article class="product-capability-card">
+							<h3>AI coding assistant</h3>
+						</article>
+						<article class="product-capability-card">
+							<h3>VS Code AI extension</h3>
+						</article>
+						<article class="product-capability-card">
+							<h3>AI code review tool</h3>
+						</article>
+						<article class="product-capability-card">
+							<h3>DeepSeek coding assistant</h3>
+						</article>
+						<article class="product-capability-card">
+							<h3>Apply diff tool</h3>
+						</article>
+						<article class="product-capability-card">
+							<h3>Code suggestions tool</h3>
+						</article>
+						<article class="product-capability-card">
+							<h3>Coding agent UI</h3>
+						</article>
+						<article class="product-capability-card">
+							<h3>File context tool</h3>
+						</article>
+						<article class="product-capability-card">
+							<h3>Custom instructions tool</h3>
+						</article>
+						<article class="product-capability-card">
+							<h3>JetBrains AI plugin</h3>
+						</article>
+						<article class="product-capability-card">
+							<h3>OpenCode UI</h3>
+						</article>
+						<article class="product-capability-card">
+							<h3>Codex IDE tool</h3>
+						</article>
+						<article class="product-capability-card">
+							<h3>DeepSeek assistant</h3>
+						</article>
+						<article class="product-capability-card">
+							<h3>AI API key tool</h3>
+						</article>
+						<article class="product-capability-card">
+							<h3>OpenAI compatible tool</h3>
+						</article>
+					</div>
+				</div>
+			</section>
+
+			<section class="pricing home-closing-section">
+				<div class="home-closing-panel">
+					<div class="home-closing-actions">
+						<a href="https://marketplace.visualstudio.com/items?itemName=pa-andreas.skia-ai-sidebar" class="pricing-cta secondary" target="_blank" rel="noopener"><img src="https://www.google.com/s2/favicons?domain=code.visualstudio.com&amp;sz=64" alt="Visual Studio Code"> Add to VS Code</a>
+					</div>
+					<span class="download-with-icons product-intro-simple-platforms">
+						<span class="download-icons">
+							<a href="https://marketplace.visualstudio.com/items?itemName=pa-andreas.skia-ai-sidebar" target="_blank" rel="noopener" aria-label="Add Ceres for Visual Studio Code">
+								<img src="https://www.google.com/s2/favicons?domain=code.visualstudio.com&amp;sz=64" alt="Visual Studio Code">
+							</a>
+							<a href="https://plugins.jetbrains.com/plugin/32670-ceres--ai-coding-assistant-with-voice/" target="_blank" rel="noopener" aria-label="Add Ceres for IntelliJ IDEA">
+								<img src="https://api.iconify.design/logos:intellij-idea.svg" alt="IntelliJ IDEA">
+							</a>
+							<a href="https://plugins.jetbrains.com/plugin/32670-ceres--ai-coding-assistant-with-voice/" target="_blank" rel="noopener" aria-label="Add Ceres for WebStorm">
+								<img src="https://api.iconify.design/logos:webstorm.svg" alt="WebStorm">
+							</a>
+							<a href="https://plugins.jetbrains.com/plugin/32670-ceres--ai-coding-assistant-with-voice/" target="_blank" rel="noopener" aria-label="Add Ceres for PhpStorm">
+								<img src="https://api.iconify.design/logos:phpstorm.svg" alt="PhpStorm">
+							</a>
+							<a href="https://plugins.jetbrains.com/plugin/32670-ceres--ai-coding-assistant-with-voice/" target="_blank" rel="noopener" aria-label="Add Ceres for PyCharm">
+								<img src="https://api.iconify.design/logos:pycharm.svg" alt="PyCharm">
+							</a>
+							<a href="https://plugins.jetbrains.com/plugin/32670-ceres--ai-coding-assistant-with-voice/" target="_blank" rel="noopener" aria-label="Add Ceres for Rider">
+								<img src="https://api.iconify.design/logos:rider.svg" alt="Rider">
+							</a>
+							<a href="https://plugins.jetbrains.com/plugin/32670-ceres--ai-coding-assistant-with-voice/" target="_blank" rel="noopener" aria-label="Add Ceres for CLion">
+								<img src="https://api.iconify.design/logos:clion.svg" alt="CLion">
+							</a>
+							<a href="https://plugins.jetbrains.com/plugin/32670-ceres--ai-coding-assistant-with-voice/" target="_blank" rel="noopener" aria-label="Add Ceres for GoLand">
+								<img src="https://api.iconify.design/logos:goland.svg" alt="GoLand">
+							</a>
+							<a href="https://plugins.jetbrains.com/plugin/32670-ceres--ai-coding-assistant-with-voice/" target="_blank" rel="noopener" aria-label="Add Ceres for RubyMine">
+								<img src="https://api.iconify.design/logos:rubymine.svg" alt="RubyMine">
+							</a>
+						</span>
+					</span>
+				</div>
+			</section>
+
+		</div>
+	</main>
+
+	<footer>
+		<div class="footer-content">
+			<div class="footer-section">
+				<div class="footer-logo">
+					<span class="star-emoji"><img style="width:32px;top:6px;position:relative;" src="/favicon.webp" alt="Ceres Logo"></span>&nbsp;&nbsp;&nbsp;Ceres
+				</div>
+				<p class="footer-tagline">We are building real software that makes your path shorter.</p>
+			</div>
+			<div class="footer-section">
+				<h4>Products</h4>
+				<a href="/ceres-browser/">Browser &amp; writing assistant</a>
+				<a href="/ceres-ide/">Coding assistant</a>
+				<a href="/luna-crop/">Image editor</a>
+				<a href="/whirlpool/">Computer Search</a>
+			</div>
+			<div class="footer-section">
+				<h4>Legal</h4>
+				<a href="/web/privacy-policy.php">Privacy policy</a>
+				<a href="/web/privacy-policy-luna.php">Privacy policy (Luna)</a>
+				<a href="/web/privacy-policy-whirlpool.php">Privacy policy (Whirlpool)</a>
+				<a target="_blank" href="/LICENSE.php">Terms of use</a>
+			</div>
+			<div class="footer-section">
+				<h4>Support</h4>
+				<a href="/web/register.php" class="muted-auth">Register</a>
+				<a href="/web/login.php" class="muted-auth">Login</a>
+				<a href="/web/troubleshoot.php">Troubleshoot</a>
+				<a href="/web/troubleshoot-luna.php">Troubleshoot (Luna)</a>
+				<a href="/web/troubleshoot-whirlpool.php">Troubleshoot (Whirlpool)</a>
+				<a href="/web/contact.php">Contact us / bug report</a>
+			</div>
+			<div class="footer-section">
+				<h4>News</h4>
+				<a href="/posts/why-we-recommend-the-official-deepseek-api">Why we recommend the official DeepSeek API</a>
+				<a href="/posts/ceres-is-now-available-on-android">Ceres is now available on Android</a>
+				<a href="/posts/how-to-edit-text-with-your-voice-inside-the-browser">How to edit text with your voice inside the browser</a>
+				<a href="/posts/ceres-is-now-available-for-jetbrains-ides">Ceres is now available for JetBrains IDEs</a>
+				<a href="/posts/deepseek-v4-flash-code-review-without-the-token-burn">DeepSeek V4-Flash: code review without the token burn</a>
+				<a class="pricing-cta" href="/posts/" style="display:inline-flex;padding:0.55rem 1rem;font-size:0.85rem;color:#fff;">View all</a>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy; 2026 Andreas Express - All rights reserved.</p>
+			<div class="social-links" style="display:flex;align-items:center;gap:0.75rem;">
+				<span title="YouTube"><img src="https://www.google.com/s2/favicons?domain=youtube.com&amp;sz=64" alt="YouTube" style="width:20px;height:20px;display:block;"></span>
+				<a href="https://www.linkedin.com/in/andreas-voukelatos-678758120/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><img src="https://www.google.com/s2/favicons?domain=linkedin.com&amp;sz=64" alt="LinkedIn" style="width:20px;height:20px;display:block;"></a>
+				<a href="https://github.com/libandreas" target="_blank" rel="noopener noreferrer" title="GitHub"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=64" alt="GitHub" style="width:20px;height:20px;display:block;"></a>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+	<script src="/web/slider.js"></script>
+</body>
+
+</html>

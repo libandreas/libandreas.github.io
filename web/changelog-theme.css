@@ -1,0 +1,102 @@
+.changelog-page {
+	min-height: 100vh;
+	margin: 0;
+	background: #ffffff;
+	color: #111111;
+}
+
+.changelog-shell {
+	width: min(100% - 32px, 980px);
+	margin: 0 auto;
+}
+
+.changelog-hero-card,
+.changelog-entry-card {
+	border-radius: 30px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	background: #ffffff;
+}
+
+.changelog-hero-card {
+	margin-top: 24px;
+	padding: 40px 32px;
+}
+
+.changelog-kicker {
+	display: inline-flex;
+	align-items: center;
+	padding: 10px 16px;
+	border-radius: 999px;
+	background: rgba(18, 60, 124, 0.08);
+	color: #123c7c;
+	font-size: 0.9rem;
+	font-weight: 700;
+	letter-spacing: 0;
+	text-transform: uppercase;
+}
+
+.changelog-hero-card h1,
+.changelog-entry-card h2 {
+    font-family: Noto Sans, Arial, sans-serif;
+	color: #111111;
+}
+
+.changelog-hero-card h1 {
+	margin: 18px 0 12px;
+	font-size: clamp(2.2rem, 5vw, 3.5rem);
+	line-height: 1.14;
+	letter-spacing: 0;
+}
+
+.changelog-lead,
+.changelog-entry-date,
+.changelog-points {
+	color: #333333;
+}
+
+.changelog-lead {
+	margin: 0;
+	font-size: 1.14rem;
+	line-height: 1.8;
+}
+
+.changelog-list {
+	display: grid;
+	gap: 24px;
+	margin-top: 24px;
+}
+
+.changelog-entry-card {
+	padding: 22px;
+}
+
+.changelog-entry-meta {
+	margin-top: 0;
+	font-size: 0.88rem;
+	font-weight: 700;
+	letter-spacing: 0;
+	text-transform: uppercase;
+	color: #123c7c;
+}
+
+.changelog-entry-card h2 {
+	margin: 10px 0 10px;
+	font-size: clamp(1.6rem, 3vw, 2.3rem);
+	line-height: 1.12;
+	letter-spacing: 0;
+}
+
+.changelog-entry-date {
+	margin: 0;
+	font-size: 0.95rem;
+}
+
+.changelog-points {
+	margin: 18px 0 0;
+	padding-left: 1.2rem;
+	line-height: 1.75;
+}
+
+.changelog-points li+li {
+	margin-top: 0.45rem;
+}

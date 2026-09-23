@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Fast Image Editor with AI: Crop, Background Removal &amp; Upscaling</title>
+    <meta name="description"
+        content="AI image editor for browser & IDE. Crop, resize for social, remove & rebuild backgrounds, move objects with AI, upscale/restore details, OCR text from images/videos, overlay images, convert WebP/PNG/JPEG — all offline, no upload.">
+
+	<!-- Open Graph / Facebook -->
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://ceres-assistant.com/luna-crop/">
+    <meta property="og:title" content="Fast Image Editor with AI: Crop, Background Removal &amp; Upscaling">
+    <meta property="og:description" content="AI image editor for browser & IDE. Crop, resize for social, remove & rebuild backgrounds, move objects with AI, upscale/restore details, OCR text, overlay images and convert formats — all offline, no upload.">
+    <meta property="og:image" content="https://ceres-assistant.com/favicon-2-facebook.webp">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="Luna Crop image editor banner">
+	<meta property="og:site_name" content="Ceres">
+	<meta property="og:locale" content="en_US">
+
+	<!-- Twitter / X -->
+	<meta name="twitter:card" content="summary_large_image">
+	<meta name="twitter:url" content="https://ceres-assistant.com/luna-crop/">
+    <meta name="twitter:title" content="Fast Image Editor with AI: Crop, Background Removal &amp; Upscaling">
+    <meta name="twitter:description" content="AI image editor for browser & IDE. Crop, resize for social, remove & rebuild backgrounds, move objects with AI, upscale/restore details, OCR text, overlay images and convert formats — all offline, no upload.">
+    <meta name="twitter:image" content="https://ceres-assistant.com/favicon-2-facebook.webp">
+    <meta name="twitter:image:alt" content="Luna Crop image editor banner">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<!-- Removed the Tektur webfont link. -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="/web/styles.css">
+	<link rel="icon" href="/favicon-2.webp" type="image/webp">
+	<link rel="apple-touch-icon" href="/favicon-128-128.png">
+	<script data-goatcounter="https://pa-andreas.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+	<link rel="canonical" href="https://ceres-assistant.com/luna-crop/">
+</head>
+
+<body class="product-theme-page">
+	<nav class="top-nav">
+		<div class="nav-content">
+			<div class="nav-left">
+				<a href="/" class="nav-logo">
+					<img src="/favicon-2.webp" alt="Ceres" title="Ceres" class="hero-logo-small">
+				</a>
+			</div>
+			<div class="nav-right">
+				<a href="/" class="nav-link">Home</a>
+				<a href="#products" class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">Products &#9662;</a>
+				<div class="dropdown-menu">
+					<a href="/ceres-browser/"><strong>Browser &amp; writing assistant</strong></a>
+					<a href="/ceres-ide/"><strong>Coding assistant</strong></a>
+					<a href="/luna-crop/"><strong>Image editor</strong></a>
+					<a href="/whirlpool/"><strong>Computer Search</strong></a>
+				</div>
+				<a href="/web/pricing.php" class="nav-link">Pricing</a>
+				<a href="/web/troubleshoot-luna.php" class="nav-link">Help</a>
+				<a href="/web/login.php" class="nav-link muted-auth">Login</a>
+				<a href="https://chromewebstore.google.com/detail/lndmmpakfadenhkcmhdlgnmcilogkepg" target="_blank" rel="noopener" class="nav-button"><img src="https://www.google.com/chrome/static/images/chrome-logo-m100.svg" alt="Google Chrome"> Add to Chrome</a>
+			</div>
+		</div>
+	</nav>
+	<script src="/web/header.js"></script>
+
+	<main class="product-page">
+		<div class="product-shell">
+			<section class="product-intro-simple">
+				<div class="product-intro-simple-logo">
+					<img src="/favicon-2.webp" alt="Fast Image Editor with AI logo">
+				</div>
+				<h1 class="product-intro-simple-title">Fast Image Editor with AI</h1>
+				<p class="product-intro-simple-description">Fast image editing with AI &bull; extract and remove objects, crop, resize, or edit screenshots, Luna can prepare files faster directly inside your browser or IDE, no upload needed.</p>
+				<div class="product-intro-simple-actions">
+					<div class="product-install-options">
+						<div class="product-install-option">
+							<a href="https://chromewebstore.google.com/detail/lndmmpakfadenhkcmhdlgnmcilogkepg"
+								class="pricing-cta" target="_blank" rel="noopener"><img src="https://www.google.com/chrome/static/images/chrome-logo-m100.svg" alt="Google Chrome"> Add to Chrome</a>
+							<span class="download-with-icons product-intro-simple-platforms">
+								<span class="download-icons">
+							<a href="https://chromewebstore.google.com/detail/lndmmpakfadenhkcmhdlgnmcilogkepg"
+								target="_blank" rel="noopener" aria-label="Add Fast Image Editor with AI for Microsoft Edge">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Microsoft_Edge_logo_%282019%29.svg"
+									alt="Microsoft Edge">
+							</a>
+							<a href="https://chromewebstore.google.com/detail/lndmmpakfadenhkcmhdlgnmcilogkepg"
+								target="_blank" rel="noopener" aria-label="Add Fast Image Editor with AI for Google Chrome">
+								<img src="https://www.google.com/chrome/static/images/chrome-logo-m100.svg"
+									alt="Google Chrome">
+							</a>
+							<a href="https://chromewebstore.google.com/detail/lndmmpakfadenhkcmhdlgnmcilogkepg"
+								target="_blank" rel="noopener" aria-label="Add Fast Image Editor with AI for Opera">
+								<img src="https://cdn.simpleicons.org/opera/FF1B2D" alt="Opera">
+							</a>
+							<a href="https://chromewebstore.google.com/detail/lndmmpakfadenhkcmhdlgnmcilogkepg"
+								target="_blank" rel="noopener" aria-label="Add Fast Image Editor with AI for Brave">
+								<img src="https://cdn.simpleicons.org/brave/FB542B" alt="Brave">
+							</a>
+							<a href="https://marketplace.visualstudio.com/items?itemName=pa-andreas.luna-image-editor"
+								target="_blank" rel="noopener" aria-label="Add Fast Image Editor with AI for Visual Studio Code">
+								<img src="https://www.google.com/s2/favicons?domain=code.visualstudio.com&amp;sz=64"
+									alt="Visual Studio Code">
+							</a>
+							<a href="https://plugins.jetbrains.com/plugin/33049-ceres-image-editor-with-background-removal"
+								target="_blank" rel="noopener" aria-label="Add Fast Image Editor with AI for IntelliJ IDEA">
+								<img src="https://api.iconify.design/logos:intellij-idea.svg" alt="IntelliJ IDEA">
+							</a>
+								</span>
+							</span>
+						</div>
+						<div class="product-install-option">
+							<a href="/www/index-2.html" class="pricing-cta" target="_blank" rel="noopener"><img data-app-platform-icon src="https://img.icons8.com/color/48/linux--v1.png" alt="Linux"> Install App</a>
+							<span class="download-with-icons product-intro-simple-platforms">
+								<span class="download-icons">
+									<a href="/www/index-2.html?source=android" aria-label="Install Fast Image Editor with AI on Android"><img src="https://cdn.simpleicons.org/android/3DDC84" alt="Android"></a>
+									<a href="/www/index-2.html?source=windows" aria-label="Install Fast Image Editor with AI on Windows"><img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2012.svg" alt="Windows"></a>
+									<a href="/www/index-2.html?source=macos" aria-label="Install Fast Image Editor with AI on macOS"><img src="https://cdn.simpleicons.org/apple/000000" alt="macOS"></a>
+									<a href="/www/index-2.html?source=linux" aria-label="Install Fast Image Editor with AI on Linux"><img src="https://img.icons8.com/color/48/linux--v1.png" alt="Linux"></a>
+								</span>
+							</span>
+							<small class="product-install-note">* Requires Google Chrome to be installed. Works offline.</small>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="product-section product-audience-section">
+				<div class="product-audience-intro">
+					<h2 class="product-section-title">Move Objects with AI</h2>
+					<p>Select any object by hand, drag it to a new position, or remove it entirely — the background reconstructs itself automatically, even on plain JPG files.</p>
+				</div>
+				<div class="product-audience-grid product-audience-grid-single">
+					<article class="product-audience-item">
+						<h3>Select, Move or Remove</h3>
+						<div class="product-audience-icon product-audience-icon-fire">✂️</div>
+						<p>Brush over any subject to isolate it, then reposition it anywhere on the frame or erase it from the scene completely.</p>
+					</article>
+					<article class="product-audience-item">
+						<h3>Background Paints Itself</h3>
+						<div class="product-audience-icon product-audience-icon-wand">🪄</div>
+						<p>The area behind the object fills in on its own with matching textures and lighting — no PSD layers, no GIMP projects, just a standard image file.</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="product-section">
+				<div class="product-shot">
+					<img src="../screenshots-new/2026-08-03_00-00-66.webp" alt="Move objects with AI inside Fast Image Editor" loading="lazy">
+				</div>
+			</section>
+
+			<section class="product-section product-audience-section">
+				<div class="product-audience-intro">
+					<h2 class="product-section-title">AI Background Removal &amp; Restore Details</h2>
+					<p>Remove backgrounds and restore low-resolution image details instantly with fast local AI processing — no server uploads.</p>
+				</div>
+				<div class="product-audience-grid product-audience-grid-single">
+					<article class="product-audience-item">
+						<h3>Instant Background Removal</h3>
+						<div class="product-audience-icon product-audience-icon-wand">🧽</div>
+						<p>Cut out subjects, logos, or products in one click with clean transparent edges directly on your machine.</p>
+					</article>
+					<article class="product-audience-item">
+						<h3>Restore Details &amp; Low-Resolution Enhancement</h3>
+						<div class="product-audience-icon product-audience-icon-fire">✨</div>
+						<p>Recover lost detail and sharpen soft or low-resolution images using fast local AI processing.</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="product-section">
+				<div class="product-shot">
+					<img src="../screenshots-new/2026-05-26_16-46-16.webp" alt="AI background removal and detail restoration inside Fast Image Editor with AI" loading="lazy">
+				</div>
+			</section>
+
+			<section class="product-section product-audience-section">
+				<div class="product-audience-intro">
+					<h2 class="product-section-title">Resize Images for Social Media</h2>
+					<p>Prepare images for social media, ads, websites, and marketing using ready-made sizes and visual crop previews.</p>
+				</div>
+				<div class="product-audience-grid product-audience-grid-single">
+					<article class="product-audience-item">
+						<h3>Ready-Made Social Media Sizes</h3>
+						<div class="product-audience-icon product-audience-icon-fire">↔️</div>
+						<p>Choose the right dimensions for Instagram, Facebook, X, LinkedIn, YouTube, Google Ads, and common website assets.</p>
+					</article>
+					<article class="product-audience-item">
+						<h3>Preview Before You Resize</h3>
+						<div class="product-audience-icon product-audience-icon-wand">🌅</div>
+						<p>Compare contain and cover options, choose the image position, and see exactly what will be cropped or added before applying the resize.</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="product-section">
+				<div class="product-shot">
+					<img src="../screenshots-new/2026-08-03_00-00-22.webp" alt="Resize images for social media with Fast Image Editor with AI" loading="lazy">
+				</div>
+			</section>
+
+			<section class="product-section product-audience-section">
+				<div class="product-audience-intro">
+					<h2 class="product-section-title">Crop, Edit and More</h2>
+					<p>From precision cropping and quick annotations to multi-layer image composition like Canva — all right inside your browser.</p>
+				</div>
+				<div class="product-audience-grid product-audience-grid-single">
+					<article class="product-audience-item">
+						<h3>Crop to Any Dimension</h3>
+						<div class="product-audience-icon product-audience-icon-fire">📐</div>
+						<p>Crop freely or lock aspect ratios, cut unwanted space, and frame your subject perfectly in seconds.</p>
+					</article>
+					<article class="product-audience-item">
+						<h3>Basic Design &amp; Annotations</h3>
+						<div class="product-audience-icon product-audience-icon-wand">✏️</div>
+						<p>Add text (typing), arrows, shapes, filters, and rotation — quick Paint-style annotations directly on your image.</p>
+					</article>
+					<article class="product-audience-item">
+						<h3>Add Images on Top (Canva-Style)</h3>
+						<div class="product-audience-icon product-audience-icon-wand">🖼️</div>
+						<p>Place additional images, logos, stamps, and badges on top of your canvas with flexible multi-layer positioning.</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="product-section">
+				<div class="product-shot">
+					<img src="../screenshots-new/2026-05-26_16-53-03.webp" alt="Crop, edit, and add images on top inside Fast Image Editor with AI" loading="lazy">
+				</div>
+			</section>
+
+			<section class="product-section product-audience-section">
+				<div class="product-audience-intro">
+					<h2 class="product-section-title">Browser and Code Editor Integration</h2>
+					<p>Work with images directly from the page you are viewing, convert to your preferred format, and insert into your project — all without leaving the browser or IDE.</p>
+				</div>
+				<div class="product-audience-grid product-audience-grid-single">
+					<article class="product-audience-item">
+						<h3>Copy Text from Images &amp; Videos</h3>
+						<div class="product-audience-icon product-audience-icon-wand">🔍</div>
+						<p>Extract readable text from any image or video frame on screen with built-in optical character recognition (OCR).</p>
+					</article>
+					<article class="product-audience-item">
+						<h3>Send to Source Code Instantly</h3>
+						<div class="product-audience-icon product-audience-icon-fire">🏹</div>
+						<p>Push any image straight into your project from VS Code or JetBrains — start using it in your code without manual downloads or file transfers.</p>
+					</article>
+					<article class="product-audience-item">
+						<h3>Convert Formats</h3>
+						<div class="product-audience-icon product-audience-icon-wand">📤</div>
+						<p>Pick your preferred format — WebP, PNG, or JPEG — and export it ready to upload to your server or use on your website.</p>
+					</article>
+				</div>
+			</section>
+
+			<section class="product-section">
+				<div class="product-shot">
+					<img src="../screenshots-new/2026-05-26_17-09-35.webp" alt="Use Fast Image Editor with AI inside the IDE" loading="lazy">
+				</div>
+			</section>
+
+			<section class="product-section">
+				<div class="product-capability-shell">
+					<div class="product-capability-intro">
+						<h2 class="product-section-title">Browser Screenshot and Image Tools</h2>
+						<p>Edit screenshots, clean images, and prepare files for websites.</p>
+					</div>
+					<div class="product-capability-grid">
+						<article class="product-capability-card"><h3>Browser Screenshot Tool</h3></article>
+						<article class="product-capability-card"><h3>AI Crop Tool</h3></article>
+						<article class="product-capability-card"><h3>Background Remover Tool</h3></article>
+						<article class="product-capability-card"><h3>AI Detail Restore</h3></article>
+						<article class="product-capability-card"><h3>Social Media Resizer</h3></article>
+						<article class="product-capability-card"><h3>Image Converter Tool</h3></article>
+						<article class="product-capability-card"><h3>Lossless WebP Converter</h3></article>
+						<article class="product-capability-card"><h3>PNG to WebP Tool</h3></article>
+						<article class="product-capability-card"><h3>Image Overlay Tool</h3></article>
+						<article class="product-capability-card"><h3>Logo Maker</h3></article>
+						<article class="product-capability-card"><h3>Offline Canva</h3></article>
+						<article class="product-capability-card"><h3>Screen Text Extractor</h3></article>
+						<article class="product-capability-card"><h3>Website Image Editor</h3></article>
+						<article class="product-capability-card"><h3>AI Object Mover</h3></article>
+						<article class="product-capability-card"><h3>Screenshot Editor Tool</h3></article>
+					</div>
+				</div>
+			</section>
+
+			<section class="pricing home-closing-section">
+				<div class="home-closing-panel">
+					<div class="home-closing-actions">
+						<a href="https://chromewebstore.google.com/detail/lndmmpakfadenhkcmhdlgnmcilogkepg"
+							class="pricing-cta secondary" target="_blank" rel="noopener"><img src="https://www.google.com/chrome/static/images/chrome-logo-m100.svg" alt="Google Chrome"> Add to Chrome</a>
+					</div>
+					<span class="download-with-icons product-intro-simple-platforms">
+						<span class="download-icons">
+							<a href="https://chromewebstore.google.com/detail/lndmmpakfadenhkcmhdlgnmcilogkepg"
+								target="_blank" rel="noopener" aria-label="Add Fast Image Editor with AI for Microsoft Edge">
+								<img src="https://upload.wikimedia.org/wikipedia/commons/9/98/Microsoft_Edge_logo_%282019%29.svg" alt="Microsoft Edge">
+							</a>
+							<a href="https://chromewebstore.google.com/detail/lndmmpakfadenhkcmhdlgnmcilogkepg"
+								target="_blank" rel="noopener" aria-label="Add Fast Image Editor with AI for Google Chrome">
+								<img src="https://www.google.com/chrome/static/images/chrome-logo-m100.svg" alt="Google Chrome">
+							</a>
+							<a href="https://chromewebstore.google.com/detail/lndmmpakfadenhkcmhdlgnmcilogkepg"
+								target="_blank" rel="noopener" aria-label="Add Fast Image Editor with AI for Opera">
+								<img src="https://cdn.simpleicons.org/opera/FF1B2D" alt="Opera">
+							</a>
+							<a href="https://chromewebstore.google.com/detail/lndmmpakfadenhkcmhdlgnmcilogkepg"
+								target="_blank" rel="noopener" aria-label="Add Fast Image Editor with AI for Brave">
+								<img src="https://cdn.simpleicons.org/brave/FB542B" alt="Brave">
+							</a>
+							<a href="https://marketplace.visualstudio.com/items?itemName=pa-andreas.luna-image-editor"
+								target="_blank" rel="noopener" aria-label="Add Fast Image Editor with AI for Visual Studio Code">
+								<img src="https://www.google.com/s2/favicons?domain=code.visualstudio.com&amp;sz=64"
+									alt="Visual Studio Code">
+							</a>
+							<a href="https://plugins.jetbrains.com/plugin/33049-ceres-image-editor-with-background-removal"
+								target="_blank" rel="noopener" aria-label="Add Fast Image Editor with AI for IntelliJ IDEA">
+								<img src="https://api.iconify.design/logos:intellij-idea.svg" alt="IntelliJ IDEA">
+							</a>
+						</span>
+					</span>
+				</div>
+			</section>
+		</div>
+	</main>
+
+	<footer>
+		<div class="footer-content">
+			<div class="footer-section">
+				<div class="footer-logo">
+					<span class="star-emoji"><img style="width:32px;top:6px;position:relative;" src="/favicon-2.webp" alt="Luna Crop Logo"></span>&nbsp;&nbsp;&nbsp;Luna Crop
+				</div>
+				<p class="footer-tagline">We are building real software that makes your path shorter.</p>
+			</div>
+			<div class="footer-section">
+				<h4>Products</h4>
+				<a href="/ceres-browser/">Browser &amp; writing assistant</a>
+				<a href="/ceres-ide/">Coding assistant</a>
+				<a href="/luna-crop/">Image editor</a>
+				<a href="/whirlpool/">Computer Search</a>
+			</div>
+			<div class="footer-section">
+				<h4>Legal</h4>
+				<a href="/web/privacy-policy.php">Privacy policy</a>
+				<a href="/web/privacy-policy-luna.php">Privacy policy (Luna)</a>
+				<a href="/web/privacy-policy-whirlpool.php">Privacy policy (Whirlpool)</a>
+				<a target="_blank" href="/LICENSE.php">Terms of use</a>
+			</div>
+			<div class="footer-section">
+				<h4>Support</h4>
+				<a href="/web/register.php" class="muted-auth">Register</a>
+				<a href="/web/login.php" class="muted-auth">Login</a>
+				<a href="/web/troubleshoot.php">Troubleshoot</a>
+				<a href="/web/troubleshoot-luna.php">Troubleshoot (Luna)</a>
+				<a href="/web/troubleshoot-whirlpool.php">Troubleshoot (Whirlpool)</a>
+				<a href="/web/contact.php">Contact us / bug report</a>
+			</div>
+			<div class="footer-section">
+				<h4>News</h4>
+				<a href="/posts/why-we-recommend-the-official-deepseek-api">Why we recommend the official DeepSeek API</a>
+				<a href="/posts/ceres-is-now-available-on-android">Ceres is now available on Android</a>
+				<a href="/posts/how-to-edit-text-with-your-voice-inside-the-browser">How to edit text with your voice inside the browser</a>
+				<a href="/posts/ceres-is-now-available-for-jetbrains-ides">Ceres is now available for JetBrains IDEs</a>
+				<a href="/posts/deepseek-v4-flash-code-review-without-the-token-burn">DeepSeek V4-Flash: code review without the token burn</a>
+				<a class="pricing-cta" href="/posts/" style="display:inline-flex;padding:0.55rem 1rem;font-size:0.85rem;color:#fff;">View all</a>
+			</div>
+		</div>
+		<div class="footer-bottom">
+			<p>&copy; 2026 Andreas Express - All rights reserved.</p>
+			<div class="social-links" style="display:flex;align-items:center;gap:0.75rem;">
+				<span title="YouTube"><img src="https://www.google.com/s2/favicons?domain=youtube.com&amp;sz=64" alt="YouTube" style="width:20px;height:20px;display:block;"></span>
+				<a href="https://www.linkedin.com/in/andreas-voukelatos-678758120/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><img src="https://www.google.com/s2/favicons?domain=linkedin.com&amp;sz=64" alt="LinkedIn" style="width:20px;height:20px;display:block;"></a>
+				<a href="https://github.com/libandreas" target="_blank" rel="noopener noreferrer" title="GitHub"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=64" alt="GitHub" style="width:20px;height:20px;display:block;"></a>
+			</div>
+		</div>
+	</footer>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js"></script>
+	<script src="/web/slider.js"></script>
+	<script>
+		(() => {
+			const userAgent = navigator.userAgent;
+			let iconSource = 'https://img.icons8.com/color/48/linux--v1.png';
+			let iconLabel = 'Linux';
+
+			if (/Android/i.test(userAgent)) {
+				iconSource = 'https://cdn.simpleicons.org/android/3DDC84';
+				iconLabel = 'Android';
+			} else if (/Windows/i.test(userAgent)) {
+				iconSource = 'https://upload.wikimedia.org/wikipedia/commons/5/5f/Windows_logo_-_2012.svg';
+				iconLabel = 'Windows';
+			} else if (/Macintosh/i.test(userAgent) && !/Mobile/i.test(userAgent)) {
+				iconSource = 'https://cdn.simpleicons.org/apple/000000';
+				iconLabel = 'macOS';
+			}
+
+			document.querySelectorAll('[data-app-platform-icon]').forEach(image => {
+				image.src = iconSource;
+				image.alt = iconLabel;
+			});
+		})();
+	</script>
+</body>
+
+</html>

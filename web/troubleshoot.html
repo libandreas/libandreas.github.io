@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ceres troubleshoot guide</title>
+	<meta name="description" content="Troubleshooting guide for Ceres Assistant and IDE extensions, including usage, API settings, and Speech to Text.">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<!-- Removed the Tektur and Instrument Sans webfont links (Instrument Sans was unused). -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<link rel="stylesheet" href="/web/styles.css">
+	<link rel="stylesheet" href="/web/contact-theme.css">
+	<link rel="icon" href="/favicon.webp" type="image/webp">
+
+	<meta property="og:title" content="Ceres troubleshoot Guide">
+
+	<meta property="og:description" content="Troubleshooting guide for Ceres Assistant and IDE extensions.">
+
+	<meta property="og:image" content="">
+	<meta property="og:url" content="https://ceres-assistant.com/web/troubleshoot.html">
+	<script data-goatcounter="https://pa-andreas.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+
+	<link rel="canonical" href="https://ceres-assistant.com/web/troubleshoot.html">
+</head>
+
+<body class="contact-page">
+	<nav class="top-nav">
+	<div class="nav-content">
+		<div class="nav-left"><a href="/" class="nav-logo"><img src="/favicon.webp" alt="Ceres" title="Ceres" class="hero-logo-small"></a></div>
+		<div class="nav-right">
+			<a href="/" class="nav-link">Home</a>
+			<a href="#products" class="nav-link dropdown-trigger" aria-haspopup="true" aria-expanded="false">Products &#9662;</a>
+			<div class="dropdown-menu">
+				<a href="/ceres-browser/"><strong>Browser &amp; writing assistant</strong></a>
+				<a href="/ceres-ide/"><strong>Coding assistant</strong></a>
+				<a href="/luna-crop/"><strong>Image editor</strong></a>
+				<a href="/whirlpool/"><strong>Computer Search</strong></a>
+			</div>
+			<a href="/web/pricing.php" class="nav-link">Pricing</a>
+			<a href="/web/troubleshoot.html" class="nav-link">Help</a>
+			<a href="/web/login.php" class="nav-link muted-auth">Login</a>
+			<a href="https://chromewebstore.google.com/detail/aihinngjfokcpfnlndlpdhgmibohknaf" target="_blank" rel="noopener" class="nav-button"><img src="https://www.google.com/chrome/static/images/chrome-logo-m100.svg" alt="Google Chrome"> Add to Chrome</a>
+		</div>
+	</div>
+</nav>
+<script src="/web/header.js"></script>
+
+	<main class="contact-shell">
+		<section class="contact-card">
+			<div>
+				<div class="contact-kicker">Troubleshoot guide</div>
+				<h1 class="text-1">Ceres troubleshoot guide</h1>
+				<p class="contact-lead html-1">Troubleshooting guide for Ceres Assistant and IDE extensions.</p>
+			</div>
+
+			<article class="html">
+				<h2 id="ceres-assistant">Ceres Assistant</h2>
+				<p><a href="https://chromewebstore.google.com/detail/aihinngjfokcpfnlndlpdhgmibohknaf" target="_blank" rel="noopener noreferrer">Get Ceres Assistant from the Chrome Web Store</a></p>
+				<h3>Online and offline use</h3>
+				<p>The app is saved in the background while you use it, so you can also open it offline.</p>
+				<h3>Installation</h3>
+				<p>In Chrome, click the install icon in the address bar and select Install. Open the app from its desktop shortcut.</p>
+				<p>On Android, choose Install app from Chrome's menu. On iPhone or iPad, open the app in Safari and choose Share → Add to Home Screen.</p>
+				<h3>Uninstallation</h3>
+				<p>On your computer, open <code>chrome://apps</code>, right-click the app, and select Uninstall.</p>
+				<p>On mobile, touch and hold the app icon, then select Uninstall or Delete.</p>
+				<h3>Chrome extension</h3>
+				<p>The Chrome extension includes the application files locally inside Chrome, so the app can open offline. These files do not sync with the website or depend on its online or offline mode. They are updated only when Chrome updates the extension. If you use your own API key with an online AI provider, you still need an internet connection for those AI features.</p>
+				<h3>Is my session saved when I close the application?</h3>
+				<p>Yes. Ceres saves your session in local browser storage so you can continue where you left off when you reopen the application or sidebar.</p>
+				<p>Your saved session remains available unless you delete the application's data or clear its browser storage.</p>
+				<h3>How do free premium actions work?</h3>
+				<p>Ceres includes 20 free premium actions every day. You can see how many actions remain and when they reset in the License key section of Settings.</p>
+				<p>Your twentieth action works normally and Ceres lets you know that it was your last free action for the day. The actions become available again at the displayed reset time. An active license unlocks unlimited usage.</p>
+				<h3>Why do the inline buttons take a long time to load?</h3>
+				<p>If you have not added an API key, some actions may try to use the browser's built-in AI. That can be slow depending on your computer, browser, memory, CPU, GPU, and driver support. This kind of local browser AI is still experimental, so the first request can feel heavy on older hardware.</p>
+				<p>For faster and higher quality results, add an API key from <a href="https://platform.openai.com/account/api-keys" target="_blank" rel="noopener noreferrer">OpenAI</a>, <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer">Google AI Studio</a>, <a href="https://platform.deepseek.com/api_keys" target="_blank" rel="noopener noreferrer">DeepSeek</a>, <a href="https://openrouter.ai/settings/keys" target="_blank" rel="noopener noreferrer">OpenRouter</a>, or another supported provider in the sidebar settings. Ceres rewrites, speech transcription, and browser assist become much faster and more reliable with a good provider key.</p>
+				<h3>Why does smart buttons stay on connecting or processing?</h3>
+				<p>Chrome extensions run under Manifest V3, and Chrome may suspend extension workers to save resources. If the extension says connecting or processing for a long time, it may be waking up before it can handle the request.</p>
+				<p>Give it a moment, especially after the browser has been idle. After the worker wakes up, the next requests are usually faster. If the same problem continues, send us a <a href="/web/contact.php">bug report</a> with your browser, extension name, model provider, and what you were trying to do.
+				</p>
+				<h3>How should I set up my API key?</h3>
+				<p>If you use <a href="https://platform.openai.com/account/api-keys" target="_blank" rel="noopener noreferrer">OpenAI</a>, GPT-5 mini is a good everyday choice for writing and assistant work. For Speech to Text in the browser, choose a speech model such as GPT Audio when it is available in your provider settings.</p>
+				<p>If you use <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer">Google AI Studio</a>, Gemini 3 Flash is usually enough for inline proofread, short rewrites, transcription cleanup, and normal browser tasks. Gemini 3 Pro can be useful for heavier Ceres work, but it is often overkill for simple proofreading or short replies.
+				</p>
+				<p>For lower cost, try <a href="https://platform.deepseek.com/api_keys" target="_blank" rel="noopener noreferrer">DeepSeek</a>, <a href="https://openrouter.ai/settings/keys" target="_blank" rel="noopener noreferrer">OpenRouter</a>, or another <a href="https://platform.openai.com/account/api-keys" target="_blank" rel="noopener noreferrer">OpenAI</a>-compatible provider. Some providers include free usage, budget models, or very low pricing. If you want the tool to feel instant, choose a fast model before choosing the biggest model.</p>
+				<h3>Why does Navigation mode show “unsupported tools” errors?</h3>
+				<p>If Navigation mode does not work, or you see tool-related or “not supported” errors, the selected AI model may not support tool calling. You can disable Navigation mode and continue using regular chat, or switch to an LLM that supports tool calling.</p>
+				<h3>Why isn't Reasoning mode working?</h3>
+				<p>If Reasoning mode does not work even though it is enabled, the selected AI model may not support reasoning. You can disable Reasoning mode and continue using regular chat, or switch to an LLM that supports reasoning.</p>
+				<h3>What is the context window bar?</h3>
+				<p>After you add a key, you may see a bar or window at the top that slowly fills up. This is the context window. It shows how full the conversation is getting as you add text, files, URLs, PDFs, images, or long replies.</p>
+				<p>If the context window becomes too full, the model may stop seeing the whole conversation clearly. Use the arrows and Break Window to split the conversation at the point you choose. After that, the model focuses on the lower, useful part of the chat. This lets you keep working without deleting the whole conversation or paying for very large context models every time.</p>
+				<h3>Why can some large PDFs or URLs not be read?</h3>
+				<p>Ceres includes read limits to prevent accidentally sending very large PDFs or URLs and creating expensive API calls. If a PDF or URL is too large, the extension may stop before reading all of it.</p>
+				<p>Open settings and increase the Read URL / Read File limit if you know the content is safe to process. Use a larger limit only when you understand the possible token cost.</p>
+				<h3>Why do I need my own provider key?</h3>
+				<p>Most AI extensions do not own the large AI models they use. They call providers such as <a href="https://platform.openai.com/account/api-keys" target="_blank" rel="noopener noreferrer">OpenAI</a>, <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer">Google</a>, <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener noreferrer">Anthropic</a>, <a href="https://platform.deepseek.com/api_keys" target="_blank" rel="noopener noreferrer">DeepSeek</a>, or other model platforms, then include that cost inside a subscription.</p>
+				<p>We chose a different approach. You bring the provider you want, use the model you prefer, and pay the provider directly for the usage you create. This avoids hiding model costs inside our pricing and lets you use free provider allowance, local models, or budget APIs when they fit your work.</p>
+				<h3>How much will API usage cost?</h3>
+				<p>It depends on the model and the product. Ceres usually makes many small calls for proofreading, rewriting, transcription, or short browser text actions. It does not send an entire long session for a simple correction. With a mini or budget model, the monthly cost can be tiny, sometimes under one euro for light use, or free when your provider includes free allowance.</p>
+				<p>Ceres can cost more because it may analyze longer conversations, files, URLs, PDFs, code, or project context. Even then, it can still be much cheaper than long autonomous coding sessions that call the model repeatedly while exploring the project.</p>
+				<p>A practical starting point is to add five or ten euros of credit to your favorite provider and watch usage for a few days. If you choose <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer">Gemini Flash</a>, <a href="https://platform.deepseek.com/api_keys" target="_blank" rel="noopener noreferrer">DeepSeek</a>, or another budget model, normal use may feel almost invisible in cost.</p>
+				<h3>Why is Speech to Text giving the wrong text?</h3>
+				<p>In the browser, Speech to Text works with the browser speech-to-text engine unless the user has configured an audio LLM in settings. The browser handles language detection automatically.</p>
+				<h4>Browser speech to text</h4>
+				<p>If the result is completely unrelated, or you receive recording errors, start with the microphone. Check browser permission, selected input device, microphone volume, and the physical connection. Test with a simple audio recorder until the recording sounds clean.</p>
+				<h3>Why do I see "Built-in AI is not available on your computer"?</h3>
+				<p>Browser built-in AI is available only in the Ceres browser extension and only for its floating Writing buttons when no AI provider is set in settings. These actions run locally through your browser.</p>
+				<p>Your computer must support Chrome built-in AI. Chrome docs list two supported paths: a suitable GPU, or a CPU setup with at least 16 GB of RAM and 4 CPU cores. The first run may also need time to download the local model. Source: <a href="https://developer.chrome.com/docs/ai/get-started" target="_blank" rel="noopener noreferrer">Chrome built-in AI requirements</a>.</p>
+				<p>If your browser cannot run built-in AI on your computer, add an AI provider in settings. After that, Ceres will use your selected provider for these AI features.</p>
+				<h3>Which features use browser built-in AI?</h3>
+				<p>Browser built-in AI is used only by the floating Writing buttons in the Ceres browser extension: Grammar, Summary, Collapse Text, Expand Text, and custom writing prompts. It is not available in the IDE or for other Ceres features.</p>
+				<p>Sidebar chat, Live Assistant, Command Assistant, Speech to Text, OCR, and image features do not use browser built-in AI. They need an AI provider when the feature requires one.</p>
+				<h3>What engine powers browser built-in AI?</h3>
+				<p>Ceres uses the browser's built-in Prompt API when it is available. In Google Chrome, this API runs on Gemini Nano. In Microsoft Edge, Microsoft uses Phi-4-mini instead. Sources: <a href="https://developer.chrome.com/docs/ai/prompt-api" target="_blank" rel="noopener noreferrer">Chrome Prompt API</a> and <a href="https://learn.microsoft.com/microsoft-edge/web-platform/prompt-api" target="_blank" rel="noopener noreferrer">Microsoft Edge Prompt API</a>.</p>
+				<p>The browser provides the model and decides if your computer can run it. </p>
+				<h3>Ceres in Visual Studio Code</h3>
+				<p>Ceres works with local AI through <a href="https://ollama.com/download" target="_blank" rel="noopener noreferrer">Ollama</a> and <a href="https://lmstudio.ai/" target="_blank" rel="noopener noreferrer">LM Studio</a>, as well as OpenAI-compatible APIs. It is designed for focused coding help: selected files, controlled edits, and debugger context, rather than long autonomous agentic sessions running in the background.</p>
+				<p>Choose a reliable coding model from <a href="https://platform.openai.com/account/api-keys" target="_blank" rel="noopener noreferrer">OpenAI</a>, <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noopener noreferrer">Anthropic</a>, <a href="https://aistudio.google.com/app/apikey" target="_blank" rel="noopener noreferrer">Google</a>, <a href="https://platform.deepseek.com/api_keys" target="_blank" rel="noopener noreferrer">DeepSeek</a>, or another provider you trust. For local control, test Ollama or LM Studio with a coding model that fits your machine.</p>
+				<h4>Set up Ceres in VS Code</h4>
+				<p>Enable <strong>Editor: Inlay Hints</strong> in VS Code settings to show the inline Add to Ceres actions near functions and selections. Search for <strong>inlay hints</strong> in Settings and set it to enabled or on unless pressed.</p>
+				<h3>Why is drag and drop not working in Visual Studio Code?</h3>
+				<p>When dragging an editor tab into Ceres IDE Chat, hold <strong>Shift</strong>. Visual Studio Code can otherwise block the normal drop behavior.</p>
+				<h4>VS Code and IDE speech to text</h4>
+				<p>Inside the IDE, Speech to Text can fall back to your operating system speech recognizer when the remote audio API is not available. This is useful, but it depends on the speech packages installed on your computer.</p>
+				<p>If you see <strong>poorly transcribed on VS Code, configure audio model at API settings</strong>, the local OS recognizer probably heard something but produced low-quality text. If the output is in the wrong language, install the correct speech recognition package in your operating-system language and speech settings, then restart the IDE.</p>
+				<p>On Linux, the local OS speech fallback is unavailable; configure an audio model in app settings instead. If transcription quality is still not good enough, connect your own audio LLM in the application settings.</p>
+			</article>
+		</section>
+	</main>
+
+	<footer>
+	<div class="footer-content">
+		<div class="footer-section"><div class="footer-logo"><span class="star-emoji"><img style="width:32px;top:6px;position:relative;" src="/favicon.webp" alt="Ceres Logo"></span>&nbsp;&nbsp;&nbsp;Ceres</div><p class="footer-tagline">We are building real software that makes your path shorter.</p></div>
+		<div class="footer-section"><h4>Products</h4><a href="/ceres-browser/">Browser &amp; writing assistant</a><a href="/ceres-ide/">Coding assistant</a><a href="/luna-crop/">Image editor</a><a href="/whirlpool/">Computer Search</a></div>
+		<div class="footer-section"><h4>Legal</h4><a href="/web/privacy-policy.html">Privacy policy</a><a href="/web/privacy-policy-luna.html">Privacy policy (Luna)</a><a href="/web/privacy-policy-whirlpool.html">Privacy policy (Whirlpool)</a><a target="_blank" href="/LICENSE.php">Terms of use</a></div>
+		<div class="footer-section"><h4>Support</h4><a href="/web/register.php" class="muted-auth">Register</a><a href="/web/login.php" class="muted-auth">Login</a><a href="/web/troubleshoot.html">Troubleshoot</a><a href="/web/troubleshoot-luna.html">Troubleshoot (Luna)</a><a href="/web/troubleshoot-whirlpool.html">Troubleshoot (Whirlpool)</a><a href="/web/contact.php">Contact us / bug report</a></div>
+		<div class="footer-section"><h4>News</h4><a href="/posts/why-we-recommend-the-official-deepseek-api">Why we recommend the official DeepSeek API</a><a href="/posts/ceres-is-now-available-on-android">Ceres is now available on Android</a><a href="/posts/how-to-edit-text-with-your-voice-inside-the-browser">How to edit text with your voice inside the browser</a><a href="/posts/ceres-is-now-available-for-jetbrains-ides">Ceres is now available for JetBrains IDEs</a><a href="/posts/deepseek-v4-flash-code-review-without-the-token-burn">DeepSeek V4-Flash: code review without the token burn</a><a class="pricing-cta" href="/posts/" style="display:inline-flex;padding:0.55rem 1rem;font-size:0.85rem;color:#fff;">View all</a></div>
+	</div>
+	<div class="footer-bottom"><p>&copy; 2026 Andreas Express - All rights reserved.</p><div class="social-links" style="display:flex;align-items:center;gap:0.75rem;"><span title="YouTube"><img src="https://www.google.com/s2/favicons?domain=youtube.com&amp;sz=64" alt="YouTube" style="width:20px;height:20px;display:block;"></span><a href="https://www.linkedin.com/in/andreas-voukelatos-678758120/" target="_blank" rel="noopener noreferrer" title="LinkedIn"><img src="https://www.google.com/s2/favicons?domain=linkedin.com&amp;sz=64" alt="LinkedIn" style="width:20px;height:20px;display:block;"></a><a href="https://github.com/libandreas" target="_blank" rel="noopener noreferrer" title="GitHub"><img src="https://www.google.com/s2/favicons?domain=github.com&amp;sz=64" alt="GitHub" style="width:20px;height:20px;display:block;"></a></div></div>
+</footer>
+</body>
+
+</html>

@@ -12,7 +12,7 @@
 	<script src="javascripts/main.js"></script>
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<link rel="icon" type="image/x-icon" href="Aspirina.gr.ico">
-	<link href="lightbox.css" rel="stylesheet" />
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.min.css" rel="stylesheet" />
 
 	<meta property="og:type" content="website" />
 	<meta property="og:title" content="Andreas 360 (PortFolio)" />
@@ -34,11 +34,10 @@
 
 	<header>
 		<h1>
-			<a style="color:white" href="index.html"><span style="color:#fff">Andreas Express</span> » PortFolio</a>
+			<a style="color:white" href="/"><span style="color:#fff">Andreas Express</span> » Portfolio</a>
 		</h1>
 		<h3 style="color:#cddcff">
-			PHP &bull; HTML &bull; CSS &bull; SQL &bull; Json &bull; Mobile Friendly &bull; Google Friendly &bull;
-			Custom Apps &bull; Android &bull; Windows &bull; Linux &bull; <strong title="Artificial Intelligence" style="color:rgb(252, 73, 109)">AI</strong>
+			<strong>Front-end developer with product thinking</strong>, &bull; <strong title="Software Engineering">Software Engineering</strong> &amp;>Web Development</strong> &bull; <strong title="Artificial Intelligence" style="color:rgb(252, 73, 109)">Artificial Intelligence</strong>
 		</h3>
 	</header>
 
@@ -53,14 +52,14 @@
 	<div id="banner">
 		<span id="logo"></span>
 		<span class="desktop">
-			<a id="genericbutton" href="index.html" class="button fork"><strong>Index</strong></a>
-			<a style="margin-left: -260px" href="devwork.html" class="button fork"><strong>Portofolio</strong></a>
+			<a id="genericbutton" href="/" class="button fork"><strong>Index</strong></a>
+			<a style="margin-left: -260px" href="devwork.html" class="button fork"><strong>Portfolio</strong></a>
 		</span>
 		<span class="mobile">
 			<select onchange="location = this.options[this.selectedIndex].value;" style="padding: 8px;margin-left: -6px"
 				title="Please select a page from the menu" class="button fork">
-				<option value="index.html" selected>MENU</option>
-				<option value="devwork.html">PortFolio</option>
+				<option value="/" selected>MENU</option>
+				<option value="devwork.html">Portfolio</option>
 			</select>
 		</span>
 	</div>
@@ -498,7 +497,7 @@
 		</footer>
 	</div>
 	<!--[if !IE]><script>fixScale(document);</script><![endif]-->
-	<script src="lightbox.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
 	<script>
 		var lightboxOnResize = function lightboxOnResize() {
 			if ($(window).width() < 720) {

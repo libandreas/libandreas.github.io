@@ -1,0 +1,28 @@
+{
+	"products": {
+		"free": {
+			"name": "Free",
+			"price": "0",
+			"usage": {
+				"cost": 0,
+				"time-window-hourly": 24
+			}
+		},
+		"comet": {
+			"name": "Comet",
+			"price": "7",
+			"usage": {
+				"cost": 6,
+				"time-window-hourly": 24
+			}
+		},
+		"supernova": {
+			"name": "Supernova",
+			"price": "26",
+			"usage": {
+				"cost": 15,
+				"time-window-hourly": 24
+			}
+		}
+	}
+}

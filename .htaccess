@@ -1,0 +1,86 @@
+# Custom Redirects
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+
+# Deny direct access to hidden files and folders, except public .well-known files.
+RewriteRule (^|/)\.(?!well-known(?:/|$)) - [F,L,NC]
+
+# Redirect www to non-www (preserving protocol)
+RewriteCond %{HTTP_HOST} ^www\.(.+)$ [NC]
+RewriteCond %{HTTPS}s ^on(s)|
+RewriteRule ^ http%2://%1%{REQUEST_URI} [L,R=301]
+
+# MCP OAuth discovery. Exact routes only; normal site routing stays unchanged.
+RewriteRule ^\.well-known/oauth-protected-resource(?:/common/mcp\.php)?$ common/mcp.php?oauth=resource [END]
+RewriteRule ^\.well-known/oauth-authorization-server$ common/mcp.php?oauth=metadata [END]
+
+# Preserve OAuth and token-endpoint client Authorization headers for PHP.
+RewriteRule ^common/mcp\.php$ - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+
+# Redirect all /app/* traffic to /web/*
+RewriteRule ^app/(.*)$ /web/$1 [L,QSA]
+
+# Preserve the indexed article URL after its title and slug changed.
+RewriteRule ^posts/ceres-deepseek-v4-flash-light-code-review-without-the-token-burn/?$ /posts/deepseek-v4-flash-code-review-without-the-token-burn [R=301,L]
+RewriteRule ^posts/deepseek-v4-flash-light-code-review-without-the-token-burn/?$ /posts/deepseek-v4-flash-code-review-without-the-token-burn [R=301,L]
+
+# News articles with pretty slugs: /posts/{slug} -> /web/news.php?slug={slug}
+RewriteRule ^posts/([a-z0-9-]+)/?$ /web/news.php?slug=$1 [END,QSA,NC]
+
+# Sitemap: /sitemap.xml -> /sitemap.php when Apache rewrite rules are available.
+RewriteRule ^sitemap\.xml$ /sitemap.php [L,QSA]
+
+</IfModule>
+
+# Let Apache process .html files as PHP
+AddHandler application/x-httpd-php7 .html
+
+AddType text/javascript .mjs
+AddType application/wasm .wasm
+AddType application/octet-stream .ftz
+
+# The OpenRouter callback is a static hand-off page. Never cache, frame, or
+# forward its one-time query parameters to another page.
+<Files "openrouter-callback.html">
+	<IfModule mod_headers.c>
+		Header always set Cache-Control "no-store, no-cache, must-revalidate"
+		Header always set Pragma "no-cache"
+		Header always set Referrer-Policy "no-referrer"
+		Header always set X-Content-Type-Options "nosniff"
+		Header always set X-Frame-Options "DENY"
+		Header always set Content-Security-Policy "default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
+	</IfModule>
+</Files>
+
+# Deny direct access to protected files in any folder.
+<Files "analytics.csv">
+	<IfModule mod_authz_core.c>
+		Require all denied
+	</IfModule>
+	<IfModule !mod_authz_core.c>
+		Order allow,deny
+		Deny from all
+	</IfModule>
+</Files>
+
+<FilesMatch "(?i)^(\.env(?:\..*)?|rclone\.conf|composer\.json|email-list\.json|manifest\.json|package-lock\.json|package\.json|products\.json|providers\.json|users\.json|urls-reset\.txt|users-clean\.txt|users-subscription\.txt|sftp\.json|auth\.json|wp-config\.php|passwd\.txt|.*\.(?:log|sql|bak))$">
+	<IfModule mod_authz_core.c>
+		Require all denied
+	</IfModule>
+	<IfModule !mod_authz_core.c>
+		Order allow,deny
+		Deny from all
+	</IfModule>
+</FilesMatch>
+
+# TEMPORARY SECURITY RULE: deny direct access to all JSON and TXT files.
+<FilesMatch "(?i)^(?!robots\.txt$).*\.(?:json|txt)$">
+	<IfModule mod_authz_core.c>
+		Require all denied
+	</IfModule>
+	<IfModule !mod_authz_core.c>
+		Order allow,deny
+		Deny from all
+	</IfModule>
+</FilesMatch>

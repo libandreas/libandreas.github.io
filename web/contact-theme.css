@@ -1,0 +1,210 @@
+.contact-page {
+	min-height: 100vh;
+	margin: 0;
+	background: #ffffff;
+	color: #111111;
+}
+
+.contact-shell {
+	width: min(100% - 32px, 860px);
+	margin: 20px auto;
+}
+
+.contact-kicker {
+	margin-top: 30px;
+	display: inline-flex;
+	align-items: center;
+	padding: 10px 16px;
+	border-radius: 999px;
+	background: var(--accent-soft);
+	color: var(--accent);
+	font-size: 0.9rem;
+	font-weight: 700;
+	letter-spacing: 0;
+	text-transform: uppercase;
+}
+
+.contact-card h1 {
+    margin: 15px 0 12px;
+    font-family: Noto Sans, Arial, sans-serif;
+    font-size: 30pt;
+    line-height: 1.14;
+    letter-spacing: 0;
+    color: #111111;
+}
+
+.contact-lead,
+.contact-form label,
+.contact-radio-option,
+.contact-simple-captcha,
+.contact-back {
+	color: #333333;
+}
+
+.contact-lead {
+	margin: 0;
+	font-size: 1.14rem;
+	line-height: 1.66;
+}
+
+.contact-card article.html table {
+	width: 100%;
+	margin: 24px 0;
+	border-collapse: collapse;
+	font-size: 0.98rem;
+}
+
+.contact-card article.html th,
+.contact-card article.html td {
+	padding: 12px;
+	border: 1px solid var(--border-soft);
+	text-align: left;
+	vertical-align: top;
+}
+
+.contact-card article.html th {
+	background: var(--accent-soft);
+	color: #111111;
+}
+
+.contact-card article.html tbody tr:nth-child(even) {
+	background: #f8f8f8;
+}
+
+@media (max-width: 640px) {
+	.contact-card article.html table {
+		display: block;
+		overflow-x: auto;
+		white-space: nowrap;
+	}
+}
+
+.contact-form {
+	display: grid;
+	gap: 12px;
+	margin-top: 28px;
+}
+
+.contact-form label,
+.contact-radio-group legend {
+	font-size: 0.95rem;
+	font-weight: 600;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+	width: 100%;
+	padding: 10px 12px;
+	border-radius: 12px;
+	border: 1px solid var(--border-soft);
+	background: #ffffff;
+	color: #111111;
+	font: inherit;
+	box-sizing: border-box;
+}
+
+.contact-form select {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	background-image:
+		linear-gradient(45deg, transparent 50%, #111111 50%),
+		linear-gradient(135deg, #111111 50%, transparent 50%);
+	background-position:
+		calc(100% - 22px) calc(50% - 2px),
+		calc(100% - 16px) calc(50% - 2px);
+	background-size: 6px 6px, 6px 6px;
+	background-repeat: no-repeat;
+	padding-right: 42px;
+}
+
+.contact-form select option {
+	background: #ffffff;
+	color: #111111;
+}
+
+.contact-radio-group {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: 10px 18px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+.contact-radio-group legend {
+	width: 100%;
+	margin-bottom: 2px;
+}
+
+.contact-radio-option {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	width: auto;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+
+.contact-radio-option input {
+	width: auto;
+	margin: 0;
+	padding: 0;
+	accent-color: var(--accent);
+}
+
+.contact-radio-option:has(input:checked),
+.contact-back:hover {
+	color: var(--accent);
+}
+
+.contact-form textarea {
+	min-height: 180px;
+	resize: vertical;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder,
+.contact-note {
+	color: #666666;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+	outline: none;
+	border-color: var(--accent-border);
+}
+
+.contact-form .pricing-cta {
+	margin-top: 4px;
+	justify-content: center;
+}
+
+.contact-captcha {
+	margin-top: 8px;
+	display: grid;
+	gap: 14px;
+	justify-content: start;
+}
+
+.contact-simple-captcha input {
+	margin-top: 8px;
+}
+
+.contact-note {
+	margin-top: 16px;
+	font-size: 0.92rem;
+}
+
+.contact-back {
+	display: inline-block;
+	margin-top: 22px;
+	text-decoration: none;
+	font-weight: 600;
+}

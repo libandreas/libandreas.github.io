@@ -1,0 +1,142 @@
+/* Markdown Content Styles */
+.markdown-content {
+	max-width: 900px;
+	margin: 0 auto;
+	padding: 2rem;
+	line-height: 1.7;
+	color: #111111;
+	background: #ffffff;
+}
+
+.markdown-content h1 {
+	font-size: 2.5rem;
+	margin-bottom: 1.5rem;
+	padding-bottom: 0.5rem;
+	color: #111111;
+	border-radius: 6px;
+}
+
+.markdown-content h2 {
+	font-size: 1.8rem;
+	margin-top: 2.5rem;
+	margin-bottom: 1rem;
+	color: #111111;
+	border-radius: 6px;
+}
+
+.markdown-content h3 {
+	font-size: 1.4rem;
+	margin-top: 2rem;
+	margin-bottom: 0.8rem;
+	color: #111111;
+	border-radius: 6px;
+}
+
+.markdown-content p {
+	margin-bottom: 1.2rem;
+	font-size: 1.05rem;
+}
+
+.markdown-content ul,
+.markdown-content ol {
+	margin-bottom: 1.5rem;
+	padding-left: 2rem;
+}
+
+.markdown-content li {
+	margin-bottom: 0.8rem;
+	line-height: 1.6;
+}
+
+.markdown-content strong {
+	font-weight: 800;
+}
+
+.markdown-content code {
+	background-color: rgba(18, 60, 124, 0.08);
+	padding: 0.2rem 0.4rem;
+	border-radius: 3px;
+	font-family: 'Courier New', monospace;
+	color: #123c7c;
+}
+
+.markdown-content pre {
+	background-color: rgba(18, 60, 124, 0.08);
+	padding: 1rem;
+	border-radius: 5px;
+	overflow-x: auto;
+	margin-bottom: 1.5rem;
+}
+
+.markdown-content pre code {
+	background-color: transparent;
+	padding: 0;
+}
+
+.markdown-content a {
+	color: #123c7c;
+	border-radius: 6px;
+	text-decoration: none;
+	border-bottom: 1px solid transparent;
+	transition: border-bottom 0.3s ease;
+}
+
+.markdown-content a:hover {
+	border-bottom: 1px solid #123c7c;
+}
+
+.markdown-content img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+	margin: 1.5rem 0;
+}
+
+.markdown-content blockquote {
+	border-left: 4px solid #123c7c;
+	padding-left: 1.5rem;
+	margin: 1.5rem 0;
+	font-style: italic;
+}
+
+/* Table Styles */
+.markdown-content table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 1.5rem 0;
+	background-color: #ffffff;
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.markdown-content table thead {
+	background-color: rgba(18, 60, 124, 0.08);
+	border-bottom: 2px solid rgba(18, 60, 124, 0.22);
+}
+
+.markdown-content table thead th {
+	color: #123c7c;
+	font-weight: 800;
+	padding: 1rem;
+	text-align: left;
+	font-size: 1.05rem;
+}
+
+.markdown-content table tbody td {
+	padding: 0.8rem 1rem;
+	border-bottom: 1px solid rgba(140, 183, 255, 0.1);
+	color: white;
+	font-size: 1rem;
+}
+
+.markdown-content table tbody tr {
+	transition: background-color 0.3s ease;
+}
+
+.markdown-content table tbody tr:hover {
+	background-color: rgba(140, 183, 255, 0.1);
+}
+
+.markdown-content table tbody tr:last-child td {
+	border-bottom: none;
+}

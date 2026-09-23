@@ -1,0 +1,220 @@
+* {
+	box-sizing: border-box;
+    font-family: Noto Sans, Arial, sans-serif;
+}
+
+
+#simple-php-captcha {
+	margin-top: 12px;
+}
+
+:root {
+	--border-soft: rgba(0, 0, 0, 0.1);
+	--accent: #123c7c;
+	--accent-soft: rgba(18, 60, 124, 0.08);
+	--accent-border: rgba(18, 60, 124, 0.22);
+}
+
+a {
+	text-decoration: none;
+}
+
+body {
+	margin: 0;
+	padding: 20px 0 0;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	background: #ffffff;
+	color: #111111;
+	position: relative;
+}
+
+.muted-auth {
+	pointer-events: none;
+}
+
+.hero-logo-small-2 {
+	display: inline-block;
+	width: 64px;
+	height: 64px;
+	filter: none;
+}
+
+.login-container {
+	width: min(100% - 26px, 440px);
+	padding: 26px;
+	border-radius: 20px;
+	border: 1px solid var(--border-soft);
+	background: #ffffff;
+	text-align: center;
+}
+
+.login-container h1,
+.login-container h2,
+.logo-link,
+.logo-link h1,
+.logo-link h2 {
+	color: #111111;
+	line-height: 1.16;
+	margin-top: 6px;
+}
+
+.login-container p,
+.input-group label,
+.terms-text,
+.terms-text a,
+.register-link,
+.muted-auth-text,
+.muted-auth-text a {
+	color: #333333;
+	line-height: 1.6;
+}
+
+.input-group {
+	margin-top: 15px;
+	text-align: left;
+}
+
+.input-group label {
+	display: block;
+	margin-bottom: 6px;
+	font-weight: 600;
+}
+
+.input-group input,
+.input-group select,
+#simple-php-captcha input[type=text] {
+	width: 100%;
+	padding: 12px;
+	border-radius: 10px;
+	border: 1px solid var(--border-soft);
+	background: #ffffff;
+	color: #111111;
+}
+
+.input-group input:focus,
+.input-group select:focus {
+	outline: none;
+	border-color: var(--accent-border);
+}
+
+.login-button {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-top: 18px;
+	padding: 12px 16px;
+	border: 1px solid rgba(0, 0, 0, 0.14);
+	border-radius: 10px;
+	background: rgba(0, 0, 0, 0.86);
+	color: #ffffff;
+	font: inherit;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.login-button:hover,
+.muted-auth.login-button:hover {
+	background: rgba(0, 0, 0, 0.94);
+	color: #ffffff;
+}
+
+.register-link a,
+.terms-text a:hover,
+.features-list span a:hover {
+	color: var(--accent);
+}
+
+.error-message {
+	padding: 10px;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	border: 1px solid var(--border-soft);
+	background: rgba(0, 0, 0, 0.04);
+	color: #666666;
+}
+
+.features-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 6px;
+	margin-top: 12px;
+	color: #333333;
+}
+
+.features-list span,
+.social-button {
+	background: var(--accent-soft);
+	border: 1px solid var(--accent-border);
+	color: var(--accent);
+}
+
+.features-list span {
+	padding: 5px 10px;
+	border-radius: 15px;
+	font-size: 13px;
+}
+
+.features-list span a {
+	color: #111111;
+}
+
+.terms-text {
+	margin-top: 15px;
+	font-size: 12px;
+}
+
+.social-login {
+	display: flex;
+	gap: 8px;
+	justify-content: center;
+	margin-top: 20px;
+	padding: 8px 0;
+}
+
+.social-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	transition: all 0.3s ease;
+	font-size: 20px;
+}
+
+.social-button:hover {
+	transform: translateY(-2px);
+}
+
+.metamask-icon {
+	width: 20px;
+	height: 20px;
+	transition: all 0.3s ease;
+}
+
+.social-button.metamask:hover .metamask-icon {
+	transform: scale(1.1);
+}
+
+.login-container {
+	/* οι υπάρχουσες ιδιότητές σου για desktop */
+}
+
+@media (max-width: 768px) {
+	body {
+		padding-top: 0;
+	}
+
+	.login-container {
+		background: none;
+		border: none;
+		box-shadow: none;
+		border-radius: 0;
+		max-width: 100%;
+		margin: 0 auto;
+	}
+}

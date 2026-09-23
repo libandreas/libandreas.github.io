@@ -1,0 +1,401 @@
+/* Account Page Specific Styles*/
+.pricing-card .view-details-link {
+	display: block;
+	text-align: center;
+	margin-top: 15px;
+	color: #666;
+	text-decoration: none;
+	font-size: 14px;
+	transition: color 0.3s ease;
+}
+
+.pricing-card .view-details-link:hover {
+	color: #333;
+	text-decoration: underline;
+}
+
+/* Cancel Plan Link - Red color for destructive action */
+.pricing-card .cancel-plan-link {
+	display: block;
+	text-align: center;
+	margin-top: 8px;
+	color: #d9534f;
+	text-decoration: none;
+	font-size: 14px;
+	transition: color 0.3s ease;
+}
+
+.pricing-card .cancel-plan-link:hover {
+	color: #c9302c;
+	text-decoration: underline;
+}
+
+.usage-limits-section {
+	display: grid;
+	gap: 0.9rem;
+}
+
+.usage-limits-section h3 {
+	margin-bottom: 0.25rem;
+}
+
+.usage-limits-row {
+	display: flex;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.usage-limits-progress {
+	height: 8px;
+	background: rgba(0, 0, 0, 0.1);
+	border-radius: 8px;
+	overflow: hidden;
+}
+
+.usage-limits-progress span {
+	display: block;
+	height: 100%;
+	background: #123c7c;
+}
+
+.usage-upgrade-button {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	margin-top: 0.5rem;
+}
+
+.delete-warning {
+	background: rgba(231, 76, 60, 0.1);
+	border: 1px solid rgba(231, 76, 60, 0.2);
+	border-radius: 8px;
+	color: #ae354e;
+	font-style: italic;
+	padding: 1rem;
+	margin-bottom: 1rem;
+}
+
+.delete-warning p {
+	margin: 0.5rem 0;
+}
+
+/* Usage Monitor Page Styles */
+.monitor-container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2rem;
+}
+
+.monitor-header {
+	text-align: center;
+	margin-bottom: 2rem;
+}
+
+.monitor-header h1 {
+	font-size: 2rem;
+	background: var(--primary-gradient);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	margin-bottom: 0.5rem;
+}
+
+.monitor-header p {
+	color: var(--text-secondary);
+	font-size: 1.1rem;
+}
+
+.back-link {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: var(--text-secondary);
+	text-decoration: none;
+	margin-bottom: 1rem;
+	font-size: 0.95rem;
+	transition: color 0.3s ease;
+}
+
+.back-link:hover {
+	color: var(--text-primary);
+}
+
+.bottom-back-link {
+	display: flex;
+	width: fit-content;
+	margin: 0;
+}
+
+.usage-navigation {
+	display: flex;
+	justify-content: center;
+	gap: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+.user-info-card {
+	background: var(--card-bg);
+	border-radius: 16px;
+	margin-bottom: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.user-details {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.user-display-name {
+	font-weight: 700;
+	font-size: 1.3rem;
+	color: var(--card-text);
+}
+
+.user-username {
+	font-size: 0.9rem;
+	color: #666;
+	font-family: monospace;
+}
+
+.user-stats {
+	display: flex;
+	gap: 2rem;
+	align-items: center;
+}
+
+.stat-item {
+	text-align: center;
+}
+
+.stat-label {
+	font-size: 0.8rem;
+	color: #666;
+	text-transform: uppercase;
+	letter-spacing: 0;
+}
+
+.stat-value {
+	font-size: 1.4rem;
+	font-weight: 700;
+	color: var(--card-text);
+}
+
+.stat-value.cost {
+	color: #123c7c;
+}
+
+.plan-badge {
+	display: inline-block;
+	padding: 0.25rem 0.75rem;
+	border-radius: 12px;
+	font-size: 0.8rem;
+	font-weight: 600;
+	text-transform: capitalize;
+	background: rgba(18, 60, 124, 0.08);
+	color: #123c7c;
+}
+
+.requests-table-container {
+	background: var(--card-bg);
+	border-radius: 20px;
+	overflow-x: auto;
+}
+
+.requests-table {
+	width: 100%;
+	border-collapse: collapse;
+	min-width: 600px;
+}
+
+.requests-table th,
+.requests-table td {
+	padding: 1rem 0.75rem;
+	text-align: left;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.requests-table th {
+	background: rgba(0, 0, 0, 0.05);
+	font-weight: 700;
+	color: var(--card-text);
+	font-size: 0.85rem;
+	text-transform: uppercase;
+	letter-spacing: 0;
+}
+
+.requests-table tr:hover {
+	background: rgba(0, 0, 0, 0.03);
+}
+
+.requests-table tr:last-child td {
+	border-bottom: none;
+}
+
+.request-number {
+	font-weight: 600;
+	color: #666;
+	font-size: 0.9rem;
+}
+
+.timestamp-cell {
+	font-family: monospace;
+	font-size: 0.9rem;
+	color: var(--card-text);
+}
+
+.model-cell {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.model-icon {
+	width: 24px;
+	height: 24px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: rgba(0, 0, 0, 0.05);
+	border-radius: 6px;
+	color: #666;
+	font-size: 0.8rem;
+}
+
+.model-cell .model-name {
+	font-family: monospace;
+	font-size: 0.9rem;
+	color: var(--card-text);
+}
+
+.cost-cell {
+	font-family: monospace;
+	font-size: 0.95rem;
+	font-weight: 600;
+	color: #123c7c;
+}
+
+.no-data {
+	text-align: center;
+	padding: 3rem;
+	color: #666;
+}
+
+.no-data i {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+	opacity: 0.5;
+}
+
+/* Usage Monitor Table Styles */
+.usage-table-container {
+	background: var(--card-bg);
+	border-radius: 20px;
+	overflow-x: auto;
+}
+
+.usage-table {
+	width: 100%;
+	border-collapse: collapse;
+	min-width: 900px;
+}
+
+.usage-table th,
+.usage-table td {
+	padding: 1rem 0.75rem;
+	text-align: left;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.usage-table th {
+	background: rgba(0, 0, 0, 0.05);
+	font-weight: 700;
+	color: var(--card-text);
+	font-size: 0.9rem;
+	text-transform: uppercase;
+	letter-spacing: 0;
+}
+
+.usage-table tr:hover {
+	background: rgba(0, 0, 0, 0.03);
+}
+
+.usage-table tr:last-child td {
+	border-bottom: none;
+}
+
+.user-info {
+	display: flex;
+	flex-direction: column;
+	gap: 0.25rem;
+}
+
+.user-info-link {
+	text-decoration: none;
+	display: block;
+	transition: opacity 0.3s ease;
+}
+
+.user-info-link:hover {
+	opacity: 0.7;
+}
+
+.user-info-link:hover .user-display-name {
+	text-decoration: underline;
+}
+
+.cost-cell.zero {
+	color: #999;
+}
+
+.cost-cell.highlight {
+	font-weight: 700;
+	color: #123c7c;
+}
+
+.summary-cards {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+	gap: 1.5rem;
+	margin-bottom: 2rem;
+}
+
+.summary-card {
+	background: var(--card-bg);
+	border-radius: 16px;
+	text-align: center;
+}
+
+.summary-card h3 {
+	font-size: 0.9rem;
+	color: #666;
+	margin-bottom: 0.5rem;
+	text-transform: uppercase;
+	letter-spacing: 0;
+}
+
+.summary-card .value {
+	font-size: 1.8rem;
+	font-weight: 700;
+	color: var(--card-text);
+}
+
+.summary-card .value.cost {
+	color: #123c7c;
+}
+
+.plan-badge.free {
+	background: rgba(108, 117, 125, 0.2);
+	color: #6c757d;
+}
+
+.plan-badge.comet,
+.plan-badge.supernova,
+.plan-badge.ultra-usage {
+	background: rgba(18, 60, 124, 0.08);
+	color: #123c7c;
+}

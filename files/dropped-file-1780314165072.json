@@ -1,0 +1,142 @@
+{
+	"name": "mirror-view",
+	"displayName": "Remote Control for Agents - Mirror View",
+	"description": "UI for CLI Agents with IDE context, supporting remote control from mobile phone and browser, supports Codex, Gemini CLI, OpenCode and more.",
+	"keywords": [
+		"agent-view",
+		"agent-manager",
+		"agent-control",
+		"gemini-cli",
+		"antigravity",
+		"acp",
+		"acp-client",
+		"remote-view",
+		"terminal",
+		"ui",
+		"voice",
+		"speech",
+		"opencode",
+		"copilot-cli",
+		"claude-code",
+		"codex-cli",
+		"agent-plugin",
+		"mobile",
+		"remote-control",
+		"token",
+		"usage",
+		"browser"
+	],
+	"version": "26.5.36",
+	"publisher": "pa-andreas",
+	"author": "Andreas Express",
+	"homepage": "https://ceres-assistant.com",
+	"icon": "favicon-4.png",
+	"main": "extension-4.js",
+	"engines": {
+		"vscode": "^1.80.0"
+	},
+	"activationEvents": [
+		"onStartupFinished",
+		"onUri"
+	],
+	"dependencies": {
+		"@picovoice/pvrecorder-node": "^1.2.4",
+		"form-data": "^4.0.0",
+		"pdfjs-dist": "^5.5.207"
+	},
+	"devDependencies": {
+		"@types/node": "^22.14.1",
+		"@types/vscode": "1.80.0",
+		"@vscode/vsce": "^3.3.2",
+		"clean-css": "^5.3.3",
+		"terser": "^5.46.2"
+	},
+	"license": "Proprietary",
+	"categories": [
+		"AI",
+		"Chat",
+		"Machine Learning",
+		"Programming Languages",
+		"Debuggers",
+		"Testing",
+		"Other"
+	],
+	"contributes": {
+		"viewsContainers": {
+			"activitybar": [
+				{
+					"id": "mirror-view",
+					"title": "Mirror View",
+					"icon": "./favicon-4.svg"
+				}
+			]
+		},
+		"views": {
+			"mirror-view": [
+				{
+					"type": "webview",
+					"id": "mirror-view.webview",
+					"name": "Mirror View",
+					"icon": "./favicon-4.svg"
+				}
+			]
+		},
+		"commands": [
+			{
+				"command": "mirror-view.addFileToChat",
+				"title": "Add File to Mirror View",
+				"icon": {
+					"light": "./favicon-4-color.svg",
+					"dark": "./favicon-4-color.svg"
+				}
+			},
+			{
+				"command": "mirror-view.addSelectionToChat",
+				"title": "Add Selection to Mirror View",
+				"icon": {
+					"light": "./favicon-4-color.svg",
+					"dark": "./favicon-4-color.svg"
+				}
+			}
+		],
+		"keybindings": [
+			{
+				"command": "mirror-view.addSelectionToChat",
+				"key": "ctrl+alt+m",
+				"mac": "cmd+alt+m",
+				"when": "editorHasSelection"
+			}
+		],
+		"menus": {
+			"explorer/context": [
+				{
+					"command": "mirror-view.addFileToChat",
+					"group": "5_cutcopypaste@100"
+				}
+			],
+			"editor/title": [
+				{
+					"command": "mirror-view.addFileToChat",
+					"group": "navigation"
+				}
+			],
+			"editor/title/context": [
+				{
+					"command": "mirror-view.addFileToChat",
+					"group": "5_cutcopypaste@100"
+				}
+			],
+			"editor/context": [
+				{
+					"command": "mirror-view.addFileToChat",
+					"group": "5_cutcopypaste@100"
+				},
+				{
+					"command": "mirror-view.addSelectionToChat",
+					"when": "editorHasSelection",
+					"group": "5_cutcopypaste@101"
+				}
+			]
+		}
+	}
+}

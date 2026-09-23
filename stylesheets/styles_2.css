@@ -1,6 +1,6 @@
 /*
 Leap Day for GitHub Pages
-by Matt Graham, modifyed by andreas
+by Matt Graham, modified by Andreas
 */
 
 @font-face {
@@ -508,7 +508,7 @@ body {
   font-weight: 300;
   margin: 0px;
   padding: 0px 0 20px 0px;
-  background: url(../images/body-backgroundd.png) #d3d1ea;
+  background: url(../images/body-background.png) #d3d1ea;
 }
 
 h1, h2, h3, h4, h5, h6 {
