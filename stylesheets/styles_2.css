@@ -672,6 +672,24 @@ header h1 {
   -o-text-overflow: ellipsis;
   -ms-text-overflow: ellipsis;
 }
+header .portfolio-subtitle {
+  color: #cddcff;
+}
+
+header .portfolio-subtitle > span {
+  display: inline-block;
+}
+
+header .portfolio-subtitle > span + span::before {
+  content: "•";
+  margin: 0 0.35em;
+  color: #cddcff;
+}
+
+header .portfolio-subtitle .artificial-intelligence {
+  color: rgb(252, 73, 109);
+}
+
 header p {
   color: #d8d8d8;
   text-shadow: rgba(0, 0, 0, 0.2) 0 1px 0;
@@ -1056,7 +1074,7 @@ footer {
   header ul, header p.view {
     position: static;
   }
-  fouter {
+  footer {
     text-align: center;
     margin: 20px auto;
     position: static;
