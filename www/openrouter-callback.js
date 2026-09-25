@@ -7,14 +7,12 @@
 		return;
 	}
 
+	// Keep callback parameters visible in the URL for troubleshooting, as in the localhost flow.
+	// Keep callback parameters visible in the URL for troubleshooting, as in the localhost flow.
 	const callbackUrl = new URL(window.location.href);
 	const code = String(callbackUrl.searchParams.get('code') || '').trim();
 	const oauthError = String(callbackUrl.searchParams.get('error') || '').trim();
 	console.log(`[OpenRouter OAuth callback] Page loaded. origin=${window.location.origin} path=${window.location.pathname} hasCode=${code.length > 0} codeLength=${code.length} hasError=${oauthError.length > 0}`);
-
-	// Remove the one-time callback values from the visible URL as early as possible.
-	window.history.replaceState({}, document.title, CALLBACK_PATH);
-	console.log(`[OpenRouter OAuth callback] One-time query parameters removed from the address bar.`);
 
 	function updatePage(title, message) {
 		const applyUpdate = () => {

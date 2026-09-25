@@ -1,8 +1,9 @@
 (async () => {
 	if (window !== window.top || location.origin !== 'https://ceres-assistant.com' ||
 		location.pathname !== '/www/huggingface-callback.html') return;
+	// Keep callback parameters visible in the URL for troubleshooting, as in the localhost flow.
+	// Keep callback parameters visible in the URL for troubleshooting, as in the localhost flow.
 	const parameters = new URLSearchParams(location.search);
-	history.replaceState(null, '', location.pathname);
 	const loaded = document.readyState === 'loading'
 		? new Promise(resolve => document.addEventListener('DOMContentLoaded', resolve, { once: true }))
 		: Promise.resolve();
