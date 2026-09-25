@@ -1,6 +1,7 @@
 {
 	"client_id": "https://ceres-assistant.com/www/huggingface-oauth.json",
 	"client_name": "Ceres Assistant",
+	"logo_uri": "https://ceres-assistant.com/favicon-192.png",
 	"client_uri": "https://ceres-assistant.com",
 	"redirect_uris": [
 		"https://ceres-assistant.com/www/huggingface-callback.html",
