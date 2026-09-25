@@ -1,4 +1,4 @@
-# Ceres Assistant
+# Ceres: AI Coding Assistant with Voice
 
 **Focused AI assistance for the code in front of you.**
 

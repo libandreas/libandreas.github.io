@@ -40,9 +40,9 @@ AddType text/javascript .mjs
 AddType application/wasm .wasm
 AddType application/octet-stream .ftz
 
-# The OpenRouter callback is a static hand-off page. Never cache, frame, or
+# OAuth callbacks are static hand-off pages. Never cache, frame, or
 # forward its one-time query parameters to another page.
-<Files "openrouter-callback.html">
+<FilesMatch "^(openrouter|huggingface)-callback\.html$">
 	<IfModule mod_headers.c>
 		Header always set Cache-Control "no-store, no-cache, must-revalidate"
 		Header always set Pragma "no-cache"
@@ -51,7 +51,7 @@ AddType application/octet-stream .ftz
 		Header always set X-Frame-Options "DENY"
 		Header always set Content-Security-Policy "default-src 'none'; base-uri 'none'; form-action 'none'; frame-ancestors 'none'"
 	</IfModule>
-</Files>
+</FilesMatch>
 
 # Deny direct access to protected files in any folder.
 <Files "analytics.csv">
@@ -74,8 +74,8 @@ AddType application/octet-stream .ftz
 	</IfModule>
 </FilesMatch>
 
-# TEMPORARY SECURITY RULE: deny direct access to all JSON and TXT files.
-<FilesMatch "(?i)^(?!robots\.txt$).*\.(?:json|txt)$">
+# Deny private JSON and TXT files; OAuth client metadata is public.
+<FilesMatch "(?i)^(?!(?:robots\.txt|huggingface-oauth\.json)$).*\.(?:json|txt)$">
 	<IfModule mod_authz_core.c>
 		Require all denied
 	</IfModule>

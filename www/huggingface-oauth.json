@@ -1,0 +1,12 @@
+{
+	"client_id": "https://ceres-assistant.com/www/huggingface-oauth.json",
+	"client_name": "Ceres Assistant",
+	"client_uri": "https://ceres-assistant.com",
+	"redirect_uris": [
+		"https://ceres-assistant.com/www/huggingface-callback.html",
+		"http://127.0.0.1/huggingface/callback"
+	],
+	"token_endpoint_auth_method": "none",
+	"grant_types": ["authorization_code", "refresh_token"],
+	"response_types": ["code"]
+}

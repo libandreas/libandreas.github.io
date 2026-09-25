@@ -1,5 +1,10 @@
 # Application and dependencies
-/www/
+/www/*
+!/www/huggingface-callback.html
+!/www/huggingface-callback.js
+!/www/huggingface-oauth.json
+!/www/openrouter-callback.html
+!/www/openrouter-callback.js
 /wasm/
 /common/
 /vendor/
@@ -71,7 +76,9 @@ sftp.json
 *.log
 
 # Local tools and tests
+/tools/
 /tests/
+/reports/
 /scripts/
 /composer-setup.php
 /composer.phar
