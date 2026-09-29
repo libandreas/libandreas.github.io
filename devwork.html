@@ -1,0 +1,519 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="chrome=1">
+	<meta name="robots" content="noindex, nofollow" />
+	<title>Andreas Express » Portfolio</title>
+	<link rel="stylesheet" href="stylesheets/styles_2.css">
+	<link rel="stylesheet" href="stylesheets/pygment_trac.css">
+	<script src="javascripts/jquery.min.js"></script>
+	<script src="javascripts/main.js"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+	<link rel="icon" type="image/x-icon" href="Aspirina.gr.ico">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.min.css" rel="stylesheet" />
+
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Andreas Express (Portfolio)" />
+	<meta property="og:image" content="images/Screenshot from 2017-07-06 01-31-12.png" />
+	<meta property="og:locale" content="el_GR" />
+	<meta property="og:description"
+		content="Clever e-Commerce Platform, Plug & Play, Search Tool, Service Independable & Customizable, Click to find out more.." />
+
+</head>
+
+<body>
+
+	<a onclick="window.open('','page','toolbar=0,scrollbars=0,location=0,statusbar=0,menubar=0,resizable=0,width=556,height=410,left=50,top=50,titlebar=yes')"
+		target="page"
+		style="background: rgba(0, 0, 0, 0.49);display: inline-block;position: fixed;margin: 0;width: 56px;height: 56px;border-radius: 100%;right: 12px;bottom: 12px;z-index: 150"
+		href="https://www.facebook.com/sharer/sharer.php?app_id=113869198637480&sdk=joey&u=http%3A%2F%2Flibandreas.github.io%2F">
+		<img style="width:36px;position: fixed;bottom: 22px;right: 25px;border:0" src="ic_share_white_24dp_2x.png">
+	</a>
+
+	<header>
+		<h1>
+			<a style="color:white" href="/"><span style="color:#fff">Andreas Express</span> » Portfolio</a>
+		</h1>
+		<h3 class="portfolio-subtitle">
+			<span>Front-end developer</span>
+			<span>Product Thinking</span>
+			<span>Software Engineering</span>
+			<span>Web Development</span>
+			<span class="artificial-intelligence">Artificial Intelligence</span>
+		</h3>
+	</header>
+
+	<nav>
+		<ul>
+			<li>
+
+			</li>
+		</ul>
+	</nav>
+
+	<div id="banner">
+		<span id="logo"></span>
+		<span class="desktop">
+			<a id="genericbutton" href="/" class="button fork"><strong>Index</strong></a>
+			<a style="margin-left: -260px" href="devwork.html" class="button fork"><strong>Portfolio</strong></a>
+		</span>
+		<span class="mobile">
+			<select onchange="location = this.options[this.selectedIndex].value;" style="padding: 8px;margin-left: -6px"
+				title="Please select a page from the menu" class="button fork">
+				<option value="/" selected>MENU</option>
+				<option value="devwork.html">Portfolio</option>
+			</select>
+		</span>
+	</div>
+	<!-- end banner -->
+
+	<div class="wrapper">
+		<section>
+			<h1>Small</h1>
+			<p>Μικρά websites για εταιρείες και φυσικά πρόσωπα.</p>
+
+			<hr>
+
+			<h2><a href="https://insuranceplace.gr/" target="_blank">Insurance Place</a></h2>
+			<!-- Slider Start -->
+            <div id="custom-slider" style="position:relative;max-width:100%;margin:auto;">
+                <a class="slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/OcwFHMO.png">
+                    <img class="slider-img" src="https://i.imgur.com/OcwFHMO.png" style="width:100%;height:auto;display:block;" />
+                </a>
+                <a class="slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/o9wRaXv.png">
+                    <img class="slider-img" src="https://i.imgur.com/o9wRaXv.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/AXliWnZ.png">
+                    <img class="slider-img" src="https://i.imgur.com/AXliWnZ.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/qzj9rDV.png">
+                    <img class="slider-img" src="https://i.imgur.com/qzj9rDV.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/wjGbqcN.png">
+                    <img class="slider-img" src="https://i.imgur.com/wjGbqcN.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/9BCdsOL.png">
+                    <img class="slider-img" src="https://i.imgur.com/9BCdsOL.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <button id="slider-prev" style="position:absolute;top:50%;left:10px;transform:translateY(-50%);background:rgba(0,0,0,0.4);color:#fff;border:none;padding:8px 12px;cursor:pointer;font-size:18px;z-index:2;">&#10094;</button>
+                <button id="slider-next" style="position:absolute;top:50%;right:10px;transform:translateY(-50%);background:rgba(0,0,0,0.4);color:#fff;border:none;padding:8px 12px;cursor:pointer;font-size:18px;z-index:2;">&#10095;</button>
+            </div>
+            <!-- Slider End -->
+
+            <script>
+            $(function(){
+                var total = $('#custom-slider .slider-img').length;
+                var current = 0;
+                function showSlide(idx) {
+                    $('#custom-slider .slider-img').hide().eq(idx).show();
+                    $('#custom-slider .slider-img-link').hide().eq(idx).show();
+                }
+                $('#custom-slider .slider-img-link').hide().eq(0).show();
+                $('#custom-slider .slider-img').hide().eq(0).show();
+                $('#slider-prev').click(function(){
+                    current = (current - 1 + total) % total;
+                    showSlide(current);
+                });
+                $('#slider-next').click(function(){
+                    current = (current + 1) % total;
+                    showSlide(current);
+                });
+            });
+            </script>
+
+			<p>
+				Απλή ιστοσελίδα για ασφαλιστικό γραφείο με τα τυπικά, όμορφο design &bull; Custom wordpress theme</p>
+			<p>
+				<a href="https://imgur.com/a/kQi1QYd" target="_blank" class="ga"><strong>View Gallery</strong></a>
+				<a href="https://insuranceplace.gr/" style="margin-left: 4px" target="_blank" class="sa"><strong>View
+						Site</strong></a>
+			</p>
+			<ul>
+				<li><strong>CMS: </strong>Wordpress</li>
+				<li><strong>DB: </strong>MySQL</li>
+				<li><strong>UX: </strong>Html, Css, JavaScript</li>
+			</ul>
+
+			<hr>
+
+			<h2><a href="https://balken.gr/" target="_blank">Balken</a></h2>
+			<!-- Slider Start -->
+            <div id="balken-slider" style="position:relative;max-width:100%;margin:auto;">
+                <a class="balken-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/xWYCS1x.png">
+                    <img class="balken-slider-img" src="https://i.imgur.com/xWYCS1x.png" style="width:100%;height:auto;display:block;" />
+                </a>
+                <a class="balken-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/aGNZimo.png">
+                    <img class="balken-slider-img" src="https://i.imgur.com/aGNZimo.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="balken-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/SveOb1x.png">
+                    <img class="balken-slider-img" src="https://i.imgur.com/SveOb1x.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="balken-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/ipXURKf.png">
+                    <img class="balken-slider-img" src="https://i.imgur.com/ipXURKf.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <button id="balken-slider-prev" style="position:absolute;top:50%;left:10px;transform:translateY(-50%);background:rgba(0,0,0,0.4);color:#fff;border:none;padding:8px 12px;cursor:pointer;font-size:18px;z-index:2;">&#10094;</button>
+                <button id="balken-slider-next" style="position:absolute;top:50%;right:10px;transform:translateY(-50%);background:rgba(0,0,0,0.4);color:#fff;border:none;padding:8px 12px;cursor:pointer;font-size:18px;z-index:2;">&#10095;</button>
+            </div>
+            <!-- Slider End -->
+
+            <script>
+            $(function(){
+                var totalB = $('#balken-slider .balken-slider-img').length;
+                var currentB = 0;
+                function showBalkenSlide(idx) {
+                    $('#balken-slider .balken-slider-img').hide().eq(idx).show();
+                    $('#balken-slider .balken-slider-img-link').hide().eq(idx).show();
+                }
+                $('#balken-slider .balken-slider-img-link').hide().eq(0).show();
+                $('#balken-slider .balken-slider-img').hide().eq(0).show();
+                $('#balken-slider-prev').click(function(){
+                    currentB = (currentB - 1 + totalB) % totalB;
+                    showBalkenSlide(currentB);
+                });
+                $('#balken-slider-next').click(function(){
+                    currentB = (currentB + 1) % totalB;
+                    showBalkenSlide(currentB);
+                });
+            });
+            </script>
+
+			<p>
+				Απλή ιστοσελίδα για κατασκευαστική εταιρεία με τα τυπικά, όμορφο design</p>
+			<p>
+				<a href="https://imgur.com/a/xFbRkhc" target="_blank" class="ga"><strong>View Gallery</strong></a>
+				<a href="https://balken.bg/" style="margin-left: 4px" target="_blank" class="sa"><strong>View
+						Site</strong></a>
+			</p>
+
+			<hr>
+
+			<h2><a href="https://themarketeers.gr/" target="_blank">TheMarketeers</a></h2>
+			<!-- Slider Start -->
+            <div id="marketeers-slider" style="position:relative;max-width:100%;margin:auto;">
+                <a class="marketeers-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/OIiRoxO.png">
+                    <img class="marketeers-slider-img" src="https://i.imgur.com/OIiRoxO.png" style="width:100%;height:auto;display:block;" />
+                </a>
+                <a class="marketeers-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/D0rKPTv.png">
+                    <img class="marketeers-slider-img" src="https://i.imgur.com/D0rKPTv.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="marketeers-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/LbKWImq.png">
+                    <img class="marketeers-slider-img" src="https://i.imgur.com/LbKWImq.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="marketeers-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/FxwCbEX.png">
+                    <img class="marketeers-slider-img" src="https://i.imgur.com/FxwCbEX.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="marketeers-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/eEn2VhO.png">
+                    <img class="marketeers-slider-img" src="https://i.imgur.com/eEn2VhO.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <button id="marketeers-slider-prev" style="position:absolute;top:50%;left:10px;transform:translateY(-50%);background:rgba(0,0,0,0.4);color:#fff;border:none;padding:8px 12px;cursor:pointer;font-size:18px;z-index:2;">&#10094;</button>
+                <button id="marketeers-slider-next" style="position:absolute;top:50%;right:10px;transform:translateY(-50%);background:rgba(0,0,0,0.4);color:#fff;border:none;padding:8px 12px;cursor:pointer;font-size:18px;z-index:2;">&#10095;</button>
+            </div>
+            <!-- Slider End -->
+
+            <script>
+            $(function(){
+                var totalM = $('#marketeers-slider .marketeers-slider-img').length;
+                var currentM = 0;
+                function showMarketeersSlide(idx) {
+                    $('#marketeers-slider .marketeers-slider-img').hide().eq(idx).show();
+                    $('#marketeers-slider .marketeers-slider-img-link').hide().eq(idx).show();
+                }
+                $('#marketeers-slider .marketeers-slider-img-link').hide().eq(0).show();
+                $('#marketeers-slider .marketeers-slider-img').hide().eq(0).show();
+                $('#marketeers-slider-prev').click(function(){
+                    currentM = (currentM - 1 + totalM) % totalM;
+                    showMarketeersSlide(currentM);
+                });
+                $('#marketeers-slider-next').click(function(){
+                    currentM = (currentM + 1) % totalM;
+                    showMarketeersSlide(currentM);
+                });
+            });
+            </script>
+
+			<p>
+				Απλή σελίδα γραφείου, με έμφαση στα γραφικά, υπάρχουν σελίδες παρουσιάσεις προϊόντων που παρουσιάζουν τα
+				προϊόντα κατά στήλες σε υπολογιστές και κατά σειρά στα κινητά. </p>
+			<p>
+				<a href="https://imgur.com/a/eVrcz" target="_blank" class="ga"><strong>View Gallery</strong></a>
+				<a href="https://themarketeers.gr/" style="margin-left: 4px" target="_blank" class="sa"><strong>View
+						Site</strong></a>
+			</p>
+
+			<hr>
+
+			<H1>Big</H1>
+
+			<hr>
+			<p style="text-align: center"><i>Μεγάλα projects, ηλεκτρονικά καταστήματα, πλατφόρμες διαχείρισης
+					περιεχομένου, user management, listing management</i></p>
+			<hr>
+			<h2>
+
+				<a target="_blank" href="https://ependitikiefkeria.gr/">Επενδυτική Ευκαιρία</a>
+			</h2>
+			<!-- Slider Start -->
+            <div id="ependytiki-slider" style="position:relative;max-width:100%;margin:auto;">
+                <a class="ependytiki-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/FNMdh1t.png">
+                    <img class="ependytiki-slider-img" src="https://i.imgur.com/FNMdh1t.png" style="width:100%;height:auto;display:block;" />
+                </a>
+                <a class="ependytiki-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/6RToD6s.png">
+                    <img class="ependytiki-slider-img" src="https://i.imgur.com/6RToD6s.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="ependytiki-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/s0frzEO.png">
+                    <img class="ependytiki-slider-img" src="https://i.imgur.com/s0frzEO.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="ependytiki-slider-img-link" data-lightbox="image-1" target="_blank" href="https://imgur.com/oIl5eOt.png">
+                    <img class="ependytiki-slider-img" src="https://imgur.com/oIl5eOt.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="ependytiki-slider-img-link" data-lightbox="image-1" target="_blank" href="https://imgur.com/lLiIcYX.png">
+                    <img class="ependytiki-slider-img" src="https://imgur.com/lLiIcYX.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="ependytiki-slider-img-link" data-lightbox="image-1" target="_blank" href="https://imgur.com/pFbRMWF.png">
+                    <img class="ependytiki-slider-img" src="https://imgur.com/pFbRMWF.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <button id="ependytiki-slider-prev" style="position:absolute;top:50%;left:10px;transform:translateY(-50%);background:rgba(0,0,0,0.4);color:#fff;border:none;padding:8px 12px;cursor:pointer;font-size:18px;z-index:2;">&#10094;</button>
+                <button id="ependytiki-slider-next" style="position:absolute;top:50%;right:10px;transform:translateY(-50%);background:rgba(0,0,0,0.4);color:#fff;border:none;padding:8px 12px;cursor:pointer;font-size:18px;z-index:2;">&#10095;</button>
+            </div>
+            <!-- Slider End -->
+
+            <script>
+            $(function(){
+                var totalE = $('#ependytiki-slider .ependytiki-slider-img').length;
+                var currentE = 0;
+                function showEpendytikiSlide(idx) {
+                    $('#ependytiki-slider .ependytiki-slider-img').hide().eq(idx).show();
+                    $('#ependytiki-slider .ependytiki-slider-img-link').hide().eq(idx).show();
+                }
+                $('#ependytiki-slider .ependytiki-slider-img-link').hide().eq(0).show();
+                $('#ependytiki-slider .ependytiki-slider-img').hide().eq(0).show();
+                $('#ependytiki-slider-prev').click(function(){
+                    currentE = (currentE - 1 + totalE) % totalE;
+                    showEpendytikiSlide(currentE);
+                });
+                $('#ependytiki-slider-next').click(function(){
+                    currentE = (currentE + 1) % totalE;
+                    showEpendytikiSlide(currentE);
+                });
+            });
+            </script>
+
+			<p>
+				Πλατφόρμα real estate για τη διαχείριση ακινήτων, επιτρέπει σε
+				επαγγελματίες να καταχωρούν τα ακίνητά τους και να προβάλλουν το μεσιτικό τους γραφείο, επιτρέπει
+				τοποθέτηση ακινήτων με το χέρι και με μαζική εισαγωγή από άλλη πλατφόρμα όπως plot και spitogatos.
+			</p>
+			<ul>
+				<li><strong>CMS: </strong>Php</li>
+				<li><strong>DB: </strong>Json</li>
+				<li><strong>UX: </strong>Html, Css, JavaScript</li>
+			</ul>
+			<p>
+				<a href="https://imgur.com/a/HGZlpOS" target="_blank" class="ga"><strong>View Gallery</strong></a>
+				<a href="https://ependitikiefkeria.gr/" target="_blank" class="sa"><strong>View Site</strong></a>
+			</p>
+
+			<hr>
+			<h2><a target="_blank" href="https://hdoueleiamou.gr/">Η δουλειά μου</a></h2>
+			<!-- Slider Start -->
+            <div id="hdouleiamou-slider" style="position:relative;max-width:100%;margin:auto;">
+                <a class="hdouleiamou-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/U2Xk2oz.png">
+                    <img class="hdouleiamou-slider-img" src="https://i.imgur.com/U2Xk2oz.png" style="width:100%;height:auto;display:block;" />
+                </a>
+                <a class="hdouleiamou-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/x4bior6.png">
+                    <img class="hdouleiamou-slider-img" src="https://i.imgur.com/x4bior6.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="hdouleiamou-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/rONJyNY.png">
+                    <img class="hdouleiamou-slider-img" src="https://i.imgur.com/rONJyNY.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="hdouleiamou-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/7d50yci.png">
+                    <img class="hdouleiamou-slider-img" src="https://i.imgur.com/7d50yci.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="hdouleiamou-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/U3Gm7Bx.png">
+                    <img class="hdouleiamou-slider-img" src="https://i.imgur.com/U3Gm7Bx.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="hdouleiamou-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/7s3d3Rj.png">
+                    <img class="hdouleiamou-slider-img" src="https://i.imgur.com/7s3d3Rj.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="hdouleiamou-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/LUgTl7Y.png">
+                    <img class="hdouleiamou-slider-img" src="https://i.imgur.com/LUgTl7Y.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <a class="hdouleiamou-slider-img-link" data-lightbox="image-1" target="_blank" href="https://i.imgur.com/EWnlqNC.png">
+                    <img class="hdouleiamou-slider-img" src="https://i.imgur.com/EWnlqNC.png" style="width:100%;height:auto;display:none;" />
+                </a>
+                <button id="hdouleiamou-slider-prev" style="position:absolute;top:50%;left:10px;transform:translateY(-50%);background:rgba(0,0,0,0.4);color:#fff;border:none;padding:8px 12px;cursor:pointer;font-size:18px;z-index:2;">&#10094;</button>
+                <button id="hdouleiamou-slider-next" style="position:absolute;top:50%;right:10px;transform:translateY(-50%);background:rgba(0,0,0,0.4);color:#fff;border:none;padding:8px 12px;cursor:pointer;font-size:18px;z-index:2;">&#10095;</button>
+            </div>
+            <!-- Slider End -->
+
+            <script>
+            $(function(){
+                var totalH = $('#hdouleiamou-slider .hdouleiamou-slider-img').length;
+                var currentH = 0;
+                function showHdouleiamouSlide(idx) {
+                    $('#hdouleiamou-slider .hdouleiamou-slider-img').hide().eq(idx).show();
+                    $('#hdouleiamou-slider .hdouleiamou-slider-img-link').hide().eq(idx).show();
+                }
+                $('#hdouleiamou-slider .hdouleiamou-slider-img-link').hide().eq(0).show();
+                $('#hdouleiamou-slider .hdouleiamou-slider-img').hide().eq(0).show();
+                $('#hdouleiamou-slider-prev').click(function(){
+                    currentH = (currentH - 1 + totalH) % totalH;
+                    showHdouleiamouSlide(currentH);
+                });
+                $('#hdouleiamou-slider-next').click(function(){
+                    currentH = (currentH + 1) % totalH;
+                    showHdouleiamouSlide(currentH);
+                });
+            });
+            </script>
+
+			<p>
+				Online πλατφόρμα για την διαχείριση και την πώληση υπηρεσιών, είναι ένα σύστημα που επιτρέπει σε
+				επαγγελματίες να καταχωρούν τις υπηρεσίες τους και να κάνοντας μεροκάματα, οι χρήστες μπορούν να
+				αναζητούν υπηρεσίες και να κλείνουν ραντεβού με επαγγελματίες.
+			</p>
+			<ul>
+				<li><strong>CMS:</strong>Custom PHP</li>
+				<li><strong>DB:</strong>Json Files</li>
+				<li><strong>UX: </strong>Html, Css, JavaScript</li>
+			</ul>
+			<p>
+				<a href="https://imgur.com/a/ullmvEa" target="_blank" class="ga"><strong>View Gallery</strong></a>
+				<a href="https://hdouleiamou.gr" target="_blank" class="sa"><strong>View Site</strong></a>
+			</p>
+
+			<hr>
+			<h2><a target="_blank" href="https://myflowers.gr/">MyFlowers</a></h2>
+			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/UZKQk6O.png"><img
+					alt="" src="https://i.imgur.com/UZKQk6O.png" /></a>
+			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/brIOa1r.png"><img
+					alt="" src="https://i.imgur.com/brIOa1r.png" /></a>
+			<p>
+				Πρόκειται για online κατάστημα με τρόπους πληρωμής, πρόκειται για κανονικό e-shop, για ανθοπωλείο,
+				περιλάμβανε και εφαρμογή για Android και iOS.
+			</p>
+			<ul>
+				<li><strong>CMS: </strong>PrestaShop</li>
+				<li><strong>DB: </strong>MySQL</li>
+				<li><strong>UX: </strong>Html, Css, JavaScript</li>
+			</ul>
+			<p>Στην συνέχια φτιάχτηκε εφαρμογή για <strong>Android</strong> και <strong>iOS</strong></p>
+			<p>
+				<a href="https://imgur.com/a/0Aztr" target="_blank" class="ga"><strong>View Gallery</strong></a>
+				<a href="https://www.myflowers.gr/myflowers/" target="_blank" class="sa"><strong>View Site</strong></a>
+				<a href="https://play.google.com/store/apps/details?id=com.wMyFlowers&hl=el" target="_blank"
+					class="sa"><strong>View App</strong></a>
+			</p>
+
+			<hr>
+
+			<h2><a href="https://geographic.org/streetview/" target="_blank">Street View</a></h2>
+			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/idpON0B.png"><img
+					alt="" src="https://i.imgur.com/idpON0B.png" /></a>
+			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/eegsA2K.png"><img
+					alt="" src="https://i.imgur.com/eegsA2K.png" /></a>
+
+			<a data-lightbox="image-1" class="lightboxd" target="_blank"
+				href="images/www.geographic.org-streetview-view.php.png"><img style="width: 32.4%;height: auto"
+					src="images/www.geographic.org-streetview-view.php.png" /></a>
+
+			<a data-lightbox="image-1" class="lightboxd" target="_blank"
+				href="images/www.geomondiale.fr-streetview-view.png"><img style="width: 32.4%;height: auto"
+					src="images/www.geomondiale.fr-streetview-view.png" /></a>
+
+			<a data-lightbox="image-1" class="lightboxd" target="_blank"
+				href="images/www.geografiainfo.es-streetview-view.php.png"><img style="width: 32.4%;height: auto"
+					src="images/www.geografiainfo.es-streetview-view.php.png" /></a>
+
+			<p>
+				Είναι ένα σύνολο σελίδων με ονόματα δρόμων από πολλές χώρες, ο χρήστη βρίσκει είκονες δρόμων και
+				πλατείων μέσω Google ΑPI, είναι πάγκόσμιου ενδιαφέροντος ιστότοπος και έχει γίνει ιδιέτερα δημοφιλή στην
+				Ελλάδα, πλέων έχει διαμορφοθεί σε πολλές γλώσσες όπως ρώσικα, γαλλικά, ισπανικά κ.α, τα αγγλικά είναι η
+				κύρια γλώσσα.
+			</p>
+
+			<p>
+				<a href="https://geographic.org/streetview/index.html" target="_blank" class="sa"><strong>View
+						Site</strong></a>
+			</p>
+
+			<hr>
+			<h2><a href="https://geographic.org/global_weather/" target="_blank">Global Weather</a></h2>
+			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/g7c8UbP.png"><img
+					alt="" src="https://i.imgur.com/g7c8UbP.png" /></a>
+			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/kFUGcgb.png"><img
+					alt="" src="https://i.imgur.com/kFUGcgb.png" /></a>
+			<p>
+				Είναι ένας ιστότοπος που οργανώσει τις μετεωρολογικές πληροφορίες για διάφορες χώρες, ανά έτος, ανά
+				μήνα, ανά ημέρα.
+			</p>
+			<p>
+				<a href="https://geographic.org/global_weather/" target="_blank" class="sa"><strong>View
+						Site</strong></a>
+			</p>
+
+			<hr>
+
+			<h1>Archived</h1>
+			<p>
+				Εδώ παρουσιάζονται οι μεγάλες δουλειές που έχω φτιάξει, είναι κάτι παραπάνω από ένα website, ουσιαστικά
+				είναι εφαρμογές που λειτουργούν στο διαδίκτυο, οργανώνουν πληροφορίες και προσφέρουν υπηρεσίες, αυτά τα
+				project's είναι παλιά / αρχειοθετημένα.
+			</p>
+
+			<hr>
+
+			<h2><a>Whispers.org.gr</a></h2>
+			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/J7wqr3M.png"><img
+					alt="" src="https://i.imgur.com/J7wqr3M.png" /></a>
+			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/KzIE4bG.png"><img
+					alt="" src="https://i.imgur.com/KzIE4bG.png" /></a>
+			<p>
+				Πρόκειται για μία ιστοσελίδα κοινωνικής δικτύωσης social όπως το facebook, αλλά όλα τα ποστ γίνονται σε
+				μία μορφή online βιβλίου, χωρίς flash player.
+			</p>
+			<p>
+				<a href="https://imgur.com/a/3nZ5e" target="_blank" class="ga"><strong>View Gallery</strong></a>
+			</p>
+
+			<hr>
+
+			<h2><a>DοctorAndAdvice</a></h2>
+			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/yKMeXTe.png"><img
+					alt="" src="https://i.imgur.com/yKMeXTe.png" /></a>
+			<a data-lightbox="image-1" class="lightboxd" target="_blank" href="https://i.imgur.com/ftPLzRg.png"><img
+					alt="" src="https://i.imgur.com/ftPLzRg.png" /></a>
+			<p>
+				Πρόκειται για online σύστημα αναζήτησης ιατρών με επιστημονικό και συγκεκριμένο τρόπο, περιλαμβάνει
+				σελίδα επικοινωνία με γιατρούς, σελίδα γιατρού με χάρτη φωτογραφίες, λεπτομέριες κ.τ.λ, και μέσα απο
+				εκεί μπορούν να κλείσουν online ραντεβού.
+			</p>
+			<p>
+				<a href="https://imgur.com/a/YjAcF" target="_blank" class="ga"><strong>View Gallery</strong></a>
+			</p>
+
+			<!-- ANDREAS MODIFY END-->
+		</section>
+		<footer>
+			<p><small>© Andreas 2011-2026<br> Hosted on GitHub Pages</small></p>
+		</footer>
+	</div>
+	<!--[if !IE]><script>fixScale(document);</script><![endif]-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/js/lightbox.min.js"></script>
+	<script>
+		var lightboxOnResize = function lightboxOnResize() {
+			if ($(window).width() < 720) {
+				$("a").removeAttr("data-lightbox");
+			}
+			else {
+				$('a.lightboxRemoved').prop('rel', 'lightbox');
+			}
+		}
+		$(document).ready(lightboxOnResize);
+		$(window).resize(lightboxOnResize);
+	</script>
+</body>
+
+</html>
